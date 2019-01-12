@@ -9,6 +9,17 @@ mode $powermenu {
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
+
+set $print " [A]ll [W]indow"
+bindsym Print mode $print
+mode $print {
+	bindsym a	mode "default";exec "~/.config/sway/conf/print/printa.sh"
+	bindsym w	mode "default";exec "~/.config/sway/conf/print/printw.sh"
+	bindsym Return	mode "default"
+	bindsym Escape	mode "default"
+}
+
+
 set $launcher "[A]lsamixer [C]alibre [G]typist Ne[w]sboat N[e]omutt N[m]on [N]nn [Q]utebrowser [V]ile"
 bindsym $mod+m mode $launcher
 mode $launcher	{
@@ -24,9 +35,9 @@ mode $launcher	{
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
-set $test " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
-bindsym Scroll_Lock mode $test
-mode $test	{
+set $folders " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
+bindsym Scroll_Lock mode $folders
+mode $folders	{
 
 	bindsym	1	mode "default";exec "kitty -d=/etc/portage/"
 	bindsym	2	mode "default";exec "kitty -d=~/.config/"

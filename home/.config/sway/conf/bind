@@ -1,6 +1,5 @@
 
 #SPECIAL
-bindsym Print exec "grim $HOME/Pictures/Screenshots/screenshot_$(date +%Y_%m_%d_%Hh%Mm%Ss).png "
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2%+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2%- unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"

@@ -35,16 +35,34 @@ getvar()	{
 	RDD=$(cat $BARPATH/reddit/unread)
 	RSS=$(cat $BARPATH/newsboat/unread)
 }
+getcolor()	{
+if [ "$MEM" -lt "40" ];	then
+		mc=$colorl
+	elif [ "$MEM" -lt "70" ]; then
+		mc=$colorm
+	else		
+		mc=$colorh
+fi
+	
+if [ "$CPU" -lt "40" ];	then
+		cc=$colorl
+	elif [ "$CPU" -lt "70" ]; then
+		cc=$colorm
+	else
+		cc=$colorh
+fi
+}
 
 while
 	cpu	
 	getvar
+	getcolor
 	echo	",[
 	{$c \"$color7\",$b \"$color4\",$bor,$s,$sw\"0\",$ac,$mw 210,$ft \" $NET \"},
 	{$c \"$color7\",$b \"$color3\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \"$($BARPATH/alsa/requestsb-alsa.sh)\"},
-	{$c \"$color7\",$b \"$color12\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \"$MEM%\"},
-	{$c \"$color7\",$b \"$color1\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $CPU%\"},
-	{$c \"$color7\",$b \"$color5\",$bor,$s,$sw \"0\",$ac,$mw 210,$ft \" $LOAD\"},
+	{$c \"$color7\",$b \"$mc\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \"$MEM%\"},
+	{$c \"$color7\",$b \"$cc\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $CPU%\"},
+	{$c \"$color7\",$b \"$color12\",$bor,$s,$sw \"0\",$ac,$mw 210,$ft \" $LOAD\"},
 	{$c \"#fafafa\",$b \"#333333\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $GH\"},
 	{$c \"#cee3f8\",$b \"#ff4500\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $RDD\"},
 	{$c \"#ffffff\",$b \"#f26522\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $RSS\"},
