@@ -1,0 +1,27 @@
+
+ignore-empty-password
+daemonize
+image=~/.config/swaylock/Lock.png
+color=#00000000
+scaling=fit
+bs-hl-color=#d5c4a1
+font='GoMono Nerd Font Mono'
+indicator-radius=500
+indicator-thickness=20
+inside-color=#00000000
+inside-clear-color=#8ec07c00
+inside-ver-color=#83a59800
+inside-wrong-color=#fb493400
+key-hl-color=#d5c4a1
+line-color=#d5c4a100
+line-clear-color=#d5c4a100
+line-ver-color=#d5c4a100
+line-wrong-color=#d5c4a100
+ring-color=#ffffff00
+ring-clear-color=#8ec07c00
+ring-ver-color=#83a59800
+ring-wrong-color=#fb493400
+separator-color=#00000000
+text-clear-color=#d5c4a1
+text-ver-color=#d5c4a1
+text-wrong-color=#d5c4a1

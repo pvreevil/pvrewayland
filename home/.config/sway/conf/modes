@@ -1,0 +1,22 @@
+set $powermenu "[L]ock [S]uspend [R]eboot L[o]gout S[h]utdown"
+bindsym Pause mode $powermenu
+mode $powermenu {
+	bindsym l	mode "default";exec swaylock 
+	bindsym s	mode "default";exec swaylock;exec "doas /home/erika/.local/bin/zzz"
+	bindsym r	exec "doas reboot"
+	bindsym o	exec "swaymsg exit"
+	bindsym h	exec "doas poweroff"
+	bindsym Return	mode "default"
+	bindsym Escape	mode "default"
+	}
+set $launcher "[A]lsamixer [G]typist N[m]on Ne[w]sboat [V]ile"
+bindsym $mod+m mode $launcher
+mode $launcher	{
+	bindsym a	mode "default";exec "$term -e alsamixer"
+	bindsym g	mode "default";exec "$term -e gtypist"
+	bindsym m	mode "default";exec "$term -e nmon"
+	bindsym w	mode "default";exec "$term -e newsboat"
+	bindsym v	mode "default";exec "$term -e vile"
+	bindsym Return	mode "default"
+	bindsym Escape	mode "default"
+	}

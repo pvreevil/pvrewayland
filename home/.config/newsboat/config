@@ -1,0 +1,17 @@
+
+include "~/.config/newsboat/configcolors"
+always-display-description yes
+auto-reload yes
+browser "qutebrowser %u &"
+#cache-file "~/.cache/newsboat/cache.db"
+#confirm-exit yes
+cookie-cache "~/.cache/newsboat/cookies.txt"
+download-retries 10
+error-log "~/.cache/newsboat/error.log"
+feed-sort-order lastupdate
+history-limit 0
+#keep-articles-days 21
+refresh-on-startup yes
+reload-threads 4
+save-path "~/Downloads/News"
+feedlist-format " %4i %n %11u %30t %10T "

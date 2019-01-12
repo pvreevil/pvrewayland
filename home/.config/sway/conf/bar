@@ -1,0 +1,23 @@
+bar {
+id bar-0
+font pango: Source Code Pro for Powerline 13
+#font pango: scientifica
+gaps 0 0 7 0 
+position top 
+strip_workspace_numbers no
+strip_workspace_name yes
+status_command ~/.config/sway/conf/abar/abar.sh
+colors {
+background $base05
+#background $glass
+#statusline $base0A
+statusline $base0A
+#<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
+focused_workspace	$base05		$base0E		$base05
+inactive_workspace	$base05		$base0D		$base05
+binding_mode		$base05		$base0E		$base05
+#focused_workspace	$glass		$glass		$base0A
+#inactive_workspace	$glass		$glass		$base05
+}
+}
+

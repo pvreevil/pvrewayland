@@ -1,0 +1,14 @@
+
+
+source ~/.shellsource/envs
+#source ~/clones/polyglot/polyglot.sh
+source ~/clones/polyglot/pol/polyglot/polyglot.sh
+source ~/.shellsource/alias
+HISTSIZE=5000
+HISTFILE=~/.mksh_history
+
+#colors
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	sway
+fi

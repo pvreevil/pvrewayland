@@ -1,0 +1,11 @@
+
+#Rules
+
+for_window [title="mpv"] floating enable
+for_window [title="imv"] floating enable
+
+#Exec
+
+exec devmon
+
+
