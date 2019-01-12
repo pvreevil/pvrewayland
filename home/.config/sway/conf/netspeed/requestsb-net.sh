@@ -58,7 +58,7 @@ if [ "$up" = "DOWN" ]; then
 elif [ "$up" = "" ]; then
          BW=""
 else
-         BW=" d ${dwt} u ${upt}"
+         BW=" ${dwt} ${upt}"
 fi
 
 }
