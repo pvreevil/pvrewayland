@@ -6,6 +6,9 @@ for_window [title="imv"] floating enable
 
 #Exec
 
+#automount, requires plugdev group
 exec devmon
 
+#calibre web
+exec "python ~/clones/calibre-web/cps.py"
 

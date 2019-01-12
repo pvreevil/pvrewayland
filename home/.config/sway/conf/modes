@@ -1,4 +1,4 @@
-set $powermenu "[L]ock [S]uspend [R]eboot L[o]gout S[h]utdown"
+set $powermenu "[L]ock [S]uspend [R]eboot L[o]gout S[h]utdown"
 bindsym Pause mode $powermenu
 mode $powermenu {
 	bindsym l	mode "default";exec swaylock 
@@ -9,14 +9,32 @@ mode $powermenu {
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
-set $launcher "[A]lsamixer [G]typist N[m]on Ne[w]sboat [V]ile"
+set $launcher "[A]lsamixer [C]alibre [G]typist N[m]on Ne[w]sboat [V]ile"
 bindsym $mod+m mode $launcher
 mode $launcher	{
 	bindsym a	mode "default";exec "$term -e alsamixer"
+	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"	
 	bindsym g	mode "default";exec "$term -e gtypist"
 	bindsym m	mode "default";exec "$term -e nmon"
-	bindsym w	mode "default";exec "$term -e newsboat"
+	bindsym w	mode "default";exec "$term -e ~/.config/sway/conf/newsboat/nb.sh"
 	bindsym v	mode "default";exec "$term -e vile"
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
+set $test "teste1 teste2 teste3"
+bindsym Scroll_Lock mode $test
+mode $test	{
+
+	bindsym	1	mode "test1"
+	bindsym	2	mode $test2
+	bindsym	Escape	mode "default"
+}
+
+mode test1	{
+
+	bindsym	1	mode $test
+
+	bindsym	Escape	mode "default"
+}
+
+
