@@ -14,13 +14,9 @@ media-gfx/fim aalib -djvu fbcon pdf postscript sdl imagemagick exif
 
 media-gfx/fbida ghostscript fbcon
 
-app-text/qpdfview djvu postscript -svg -sqlite -dbus
-
-app-text/mupdf -javascript -openssl
-
 net-misc/dhcpcd -udev
 
-dev-libs/sway -tray filecaps -wallpapers
+dev-libs/sway -tray -wallpapers
 
 x11-terms/kitty imagemagick doc
 
@@ -32,17 +28,11 @@ media-video/ffmpeg sdl openssl
 
 media-video/mpv drm -xv encode gbm sdl libcaca lua
 
-media-plugins/alsa-plugins ffmpeg
-
 sys-apps/openrc -netifrc
-
 
 sys-kernel/linux-firmware savedconfig
 
 mail-client/neomutt -gdbm
-
-
-
 
 
 # required by media-libs/mesa-18.2.8::gentoo[-video_cards_r100,video_cards_radeonsi,-video_cards_radeon,-video_cards_r300,-video_cards_r600,-video_cards_r200]

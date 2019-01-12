@@ -9,3 +9,6 @@ https://www.mangadex.org/rss/48e50c1f3d083e07a116713039e2bc6d/manga_id/1054 "man
 https://state.disroot.org/rss "mail" "~Disroot Status"
 https://disroot.org/en/blog.rss "mail" "~Disroot"
 https://planet.gentoo.org/rss20.xml "~Planet Gentoo"
+https://github.com/swaywm/sway/commits/master.atom "~Sway commits" "Linux"
+https://github.com/mayfrost/guides/commits/master.atom "~Mayfrost guides commits" "Linux"
+https://github.com/kovidgoyal/kitty/commits/master.atom "~Kitty commits" "Linux"

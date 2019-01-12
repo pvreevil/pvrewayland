@@ -9,24 +9,35 @@ mode $powermenu {
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
-set $launcher "[A]lsamixer [C]alibre [G]typist N[m]on Ne[w]sboat [V]ile"
+set $launcher "[A]lsamixer [C]alibre [G]typist Ne[w]sboat N[e]omutt N[m]on [N]nn [Q]utebrowser [V]ile"
 bindsym $mod+m mode $launcher
 mode $launcher	{
 	bindsym a	mode "default";exec "$term -e alsamixer"
 	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"	
 	bindsym g	mode "default";exec "$term -e gtypist"
 	bindsym m	mode "default";exec "$term -e nmon"
+	bindsym e	mode "default";exec "$term -e neomutt"
+	bindsym n	mode "default";exec "$term -e nnn"	
 	bindsym w	mode "default";exec "$term -e ~/.config/sway/conf/newsboat/nb.sh"
+	bindsym q	mode "default";exec "qutebrowser"
 	bindsym v	mode "default";exec "$term -e vile"
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
-set $test "teste1 teste2 teste3"
+set $test " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
 bindsym Scroll_Lock mode $test
 mode $test	{
 
-	bindsym	1	mode "test1"
-	bindsym	2	mode $test2
+	bindsym	1	mode "default";exec "kitty -d=/etc/portage/"
+	bindsym	2	mode "default";exec "kitty -d=~/.config/"
+	bindsym	3	mode "default";exec "kitty -d=~/pvrewayland/"
+	bindsym	4	mode "default";exec "kitty -d=/mnt/hdd1/"
+	bindsym	5	mode "default";exec "kitty -d=/mnt/hdd2/"
+	bindsym	6	mode "default";exec "kitty -d=/media/"
+	bindsym	7	mode "default";exec "kitty -d=~/clones/"
+	bindsym	8	mode "default";exec "kitty -d=~/android/"
+	bindsym	9	mode "default";exec "kitty -d=~/container/"
+	bindsym Return	mode "default"
 	bindsym	Escape	mode "default"
 }
 
