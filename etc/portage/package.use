@@ -1,0 +1,108 @@
+
+#manual
+
+sys-fs/btrfs-progs -convert
+
+sys-fs/android-file-transfer-linux fuse
+
+sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
+
+#calibre-web
+dev-lang/python sqlite
+
+media-gfx/fim aalib -djvu fbcon pdf postscript sdl imagemagick exif
+
+media-gfx/fbida ghostscript fbcon
+
+app-text/qpdfview djvu postscript -svg -sqlite -dbus
+
+app-text/mupdf -javascript -openssl
+
+net-misc/dhcpcd -udev
+
+dev-libs/sway -tray filecaps -wallpapers
+
+x11-terms/kitty imagemagick doc
+
+media-libs/imlib2 X gif jpeg png
+
+media-libs/libsdl2 gles
+
+media-video/ffmpeg sdl openssl
+
+media-video/mpv drm -xv encode gbm sdl libcaca lua
+
+media-plugins/alsa-plugins ffmpeg
+
+sys-apps/openrc -netifrc
+
+
+sys-kernel/linux-firmware savedconfig
+
+mail-client/neomutt -gdbm
+
+
+
+
+
+# required by media-libs/mesa-18.2.8::gentoo[-video_cards_r100,video_cards_radeonsi,-video_cards_radeon,-video_cards_r300,-video_cards_r600,-video_cards_r200]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-libs/jasper-2.0.14::gentoo
+# required by x11-libs/gdk-pixbuf-2.36.12::gentoo[jpeg2k]
+# required by dev-libs/sway-1.0_beta2::gentoo[swaybar,swaybg,swaylock]
+# required by sway (argument)
+>=x11-libs/libdrm-2.4.96 video_cards_radeon
+# required by dev-libs/wlroots-0.2::gentoo
+# required by dev-libs/sway-1.0_beta2::gentoo
+# required by sway (argument)
+>=media-libs/mesa-18.2.8 gles2
+# required by x11-terms/kitty-0.13.1-r1::gentoo
+# required by kitty (argument)
+>=x11-libs/libxkbcommon-0.8.2 X
+# required by x11-libs/libxkbcommon-0.8.2::gentoo[X]
+# required by x11-terms/kitty-0.13.1-r1::gentoo
+# required by kitty (argument)
+>=x11-libs/libxcb-1.13.1 xkb
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-python/PyQt5-5.10.1-r1 multimedia printsupport webengine widgets sql gui declarative network webchannel
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[multimedia]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-qt/qtmultimedia-5.11.1 widgets
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-qt/qtwebengine-5.11.1 widgets
+# required by dev-qt/qtwebengine-5.11.1::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-qt/qtwebchannel-5.11.1 qml
+# required by dev-qt/qtwebengine-5.11.1::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-libs/libxml2-2.9.8 icu
+# required by dev-qt/qtwebengine-5.11.1::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=media-libs/libvpx-1.5.0 svc
+# required by dev-qt/qtwebengine-5.11.1::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=sys-libs/zlib-1.2.11-r2 minizip
+# required by dev-qt/qtcore-5.11.1-r1::gentoo
+# required by dev-qt/qtxml-5.11.1::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo
+# required by www-client/qutebrowser-1.5.2::gentoo
+# required by qutebrowser (argument)
+>=dev-libs/libpcre2-10.30 pcre16
+# required by dev-qt/qtwayland-5.11.1::gentoo
+# required by qtwayland (argument)
+>=dev-qt/qtgui-5.11.1 egl
+# required by media-gfx/fim-0.5_rc3::gentoo[aalib]
+# required by fim (argument)
+>=media-libs/aalib-1.4_rc5-r6 slang
