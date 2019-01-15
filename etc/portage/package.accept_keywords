@@ -3,7 +3,12 @@
 
 sys-kernel/gentoo-sources ~amd64
 sys-fs/btrfs-progs ~amd64
+sys-auth/elogind ~amd64
+
+
 app-misc/neofetch ~amd64
+
+
 
 media-video/mpv ~amd64
 media-video/ffmpeg ~amd64

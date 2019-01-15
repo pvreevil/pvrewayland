@@ -7,6 +7,8 @@ sys-fs/android-file-transfer-linux fuse
 
 sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
 
+sys-apps/dbus user-session
+
 #calibre-web
 dev-lang/python sqlite
 
@@ -16,7 +18,7 @@ media-gfx/fbida ghostscript fbcon
 
 net-misc/dhcpcd -udev
 
-dev-libs/sway -tray -wallpapers
+dev-libs/sway -tray -wallpapers -swayidle -swaynag
 
 x11-terms/kitty imagemagick doc
 
