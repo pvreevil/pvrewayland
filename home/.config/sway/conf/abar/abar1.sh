@@ -5,9 +5,8 @@ pkill requestsb-
 export BARPATH=~/.config/sway/conf/
 
 KERNEL=$(uname -r)
-
+$BARPATH/netspeed/requestsb-netspeed.sh &
 $BARPATH/github/requestsb-github.sh  &
-$BARPATH/netspeed/requestsb-net.sh   &
 $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
@@ -36,11 +35,10 @@ getvar()	{
 	RDD=$(cat $BARPATH/reddit/unread)
 	RSS=$(cat $BARPATH/newsboat/unread)
 }
-
 while
 	getvar
 	getcolor
-	echo	",[
+	printf %s	",[
 	{$c \"$color7\",$b \"$gc\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $GPU%\"},
         {$c \"$color7\",$b \"$mc\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $MEM%\"},
 	{$c \"$color7\",$b \"$cc\",$bor,$s,$sw \"0\",$ac,$mw 80,$ft \" $CPU%\"},
@@ -55,5 +53,6 @@ while
 		]"
 do sleep 0.2
 done
+
 
 #                                                          
