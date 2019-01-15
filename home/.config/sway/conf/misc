@@ -17,5 +17,5 @@ default_border pixel 3
 
 exec swayidle \
     timeout 300 swaylock \
-	timeout 600 'doas /home/erika/.local/bin/zzz' \
+	timeout 900 'doas /home/erika/.local/bin/zzz' \
 
