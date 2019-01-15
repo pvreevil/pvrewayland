@@ -1,9 +1,9 @@
 
 
 output HDMI-A-1 mode 1920x1080@60Hz
-output HDMI-A-1 bg ~/Downloads/momon-ainz-ooal-gown-overlord-z4221.jpg fill #000000
+output HDMI-A-1 bg ~/Downloads/Zess.jpg
 
-include ~/clones/base16-sway/themes/base16-gruvbox-dark-hard.config
+include ~/clones/base16-sway/themes/base16-brewer.config
 include ~/.config/sway/conf/variables
 include ~/.config/sway/conf/colors
 include ~/.config/sway/conf/misc
