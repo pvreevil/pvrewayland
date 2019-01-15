@@ -1,8 +1,8 @@
 #!/bin/sh
 
-colorl=237543
-colorm=9b870c
-colorh=c2454e
+colorl=#237543
+colorm=#9b870c
+colorh=#c2454e
 
 #navy-and-ivory
 colorf=#e8dfd6
