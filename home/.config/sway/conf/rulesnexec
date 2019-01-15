@@ -6,9 +6,13 @@ for_window [title="imv"] floating enable
 
 #Exec
 
+exec mako
+exec ~/.config/sway/conf/miscs/loginm.sh 
 #automount, requires plugdev group
 exec devmon
 
 #calibre web
 exec "python ~/clones/calibre-web/cps.py"
+
+exec swaylock
 

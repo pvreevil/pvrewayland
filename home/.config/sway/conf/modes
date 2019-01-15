@@ -11,12 +11,12 @@ mode $powermenu {
 	}
 
 set $print " [A]ll [W]indow"
-bindsym Print mode $print
+bindsym --locked Print mode $print
 mode $print {
-	bindsym a	mode "default";exec "~/.config/sway/conf/print/printa.sh"
-	bindsym w	mode "default";exec "~/.config/sway/conf/print/printw.sh"
-	bindsym Return	mode "default"
-	bindsym Escape	mode "default"
+	bindsym --locked a	mode "default";exec "~/.config/sway/conf/print/printa.sh"
+	bindsym  w		mode "default";exec "~/.config/sway/conf/print/printw.sh"
+	bindsym --locked Return	mode "default"
+	bindsym --locked Escape	mode "default"
 }
 
 
@@ -51,12 +51,4 @@ mode $folders	{
 	bindsym Return	mode "default"
 	bindsym	Escape	mode "default"
 }
-
-mode test1	{
-
-	bindsym	1	mode $test
-
-	bindsym	Escape	mode "default"
-}
-
 
