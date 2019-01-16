@@ -23,7 +23,7 @@ function datamosh() {
 steps=$(shuf -i 40-70 -n 1)
 for i in $(seq 1 $steps);do datamosh "$file"; done
 
-GLITCHICON="$HOME/clones/glitchlock_/Lock.png"
+GLITCHICON="$HOME/.config/swaylock/pol.png"
 
 convert /tmp/lock.jpg /tmp/lock.png >/dev/null 2>&1
 rm /tmp/lock.jpg
@@ -31,5 +31,5 @@ rm /tmp/lock.jpg
 file=/tmp/lock.png
 size=$(identify $file | awk '{print $3}')
 
-convert $file $GLITCHICON -gravity center -geometry $size -composite $file 
+convert $file $GLITCHICON -gravity SouthWest -geometry $size -composite $file 
 swaylock -i "$file"
