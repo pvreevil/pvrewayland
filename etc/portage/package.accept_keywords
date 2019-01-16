@@ -5,10 +5,7 @@ sys-kernel/gentoo-sources ~amd64
 sys-fs/btrfs-progs ~amd64
 sys-auth/elogind ~amd64
 
-
 app-misc/neofetch ~amd64
-
-
 
 media-video/mpv ~amd64
 media-video/ffmpeg ~amd64
@@ -18,13 +15,12 @@ media-gfx/fbida ~amd64
 
 www-plugins/pdfjs ~amd64
 
-
 # required by dev-libs/sway-1.0_beta2::gentoo
 # required by sway (argument)
-=dev-libs/json-c-0.13.1-r1 ~amd64
+dev-libs/json-c ~amd64
 # required by dev-libs/sway-1.0_beta2::gentoo
 # required by sway (argument)
-=app-text/scdoc-1.5.2 ~amd64
+app-text/scdoc ~amd64
 # required by sway (argument)
 =dev-libs/sway-9999 **
 # required by dev-libs/sway-1.0_beta2::gentoo
@@ -33,13 +29,11 @@ www-plugins/pdfjs ~amd64
 
 
 
-
 # required by kitty (argument)
 x11-terms/kitty ~amd64
 # required by x11-terms/kitty-0.13.1-r1::gentoo[wayland]
 # required by kitty (argument)
-=dev-libs/wayland-protocols-1.17 ~amd64
-
+dev-libs/wayland-protocols ~amd64
 
 # required by kakoune (argument)
 app-editors/kakoune ~amd64
@@ -52,7 +46,7 @@ media-gfx/imv ~amd64
 
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
-=dev-python/pypeg2-2.15.2 ~amd64
+dev-python/pypeg2 ~amd64
 # required by qutebrowser (argument)
 www-client/qutebrowser ~amd64
 
@@ -60,4 +54,4 @@ www-client/qutebrowser ~amd64
 sys-fs/android-file-transfer-linux ~amd64
 
 # required by fim (argument)
-=media-gfx/fim-0.5_rc3 ~amd64
+media-gfx/fim ~amd64

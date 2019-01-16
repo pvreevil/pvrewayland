@@ -3,7 +3,7 @@ font=Source Code Pro for Powerline 13
 markup=1
 format=<span font_weight="bold" underline="double">%s</span>\n%b
 width=420
-background-color=#b7b8b9
-text-color=#0c0d0e
-border-color=#3182bd
+background-color=#8ca68c
+text-color=#131513
+border-color=#8ca68c
 border-size=5

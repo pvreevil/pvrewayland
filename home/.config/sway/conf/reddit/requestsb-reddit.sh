@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "0">${HOME}/.config/sway/conf/reddit/unread
+printf "0">${HOME}/.config/sway/conf/reddit/unread
 sleep 10
 
 URL=$(head -1 ${HOME}/.config/sway/conf/netvar)
@@ -12,9 +12,9 @@ notifications=$(curl -sf --user-agent "$USERAGENT" "$URL" | jq '.["data"]["child
 COUNT1=$(cat ~/.config/sway/conf/reddit/unread)
 
 	if [ -n "$notifications" ] && [ "$notifications" -gt 0 ]; then
-	    echo "$notifications">${HOME}/.config/sway/conf/reddit/unread
+	    printf "$notifications">${HOME}/.config/sway/conf/reddit/unread
 	else
-	    echo "0">${HOME}/.config/sway/conf/reddit/unread
+	    printf "0">${HOME}/.config/sway/conf/reddit/unread
 	fi
 
 COUNT2=$(cat ~/.config/sway/conf/reddit/unread)
@@ -28,6 +28,5 @@ COUNT2=$(cat ~/.config/sway/conf/reddit/unread)
 	if [ $COUNT2 -gt $COUNT1 ]; then
 		notify-send.sh -t 7000 "Reddit" "$notifications unread $not"
 	fi
-
 do sleep 60
 done

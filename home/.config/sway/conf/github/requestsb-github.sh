@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "0">${HOME}/.config/sway/conf/github/unread
+printf "0">${HOME}/.config/sway/conf/github/unread
 sleep 10
 
 TOKEN=$(head -2 ${HOME}/.config/sway/conf/netvar | tail -1)
@@ -12,9 +12,9 @@ notifications=$(curl -fs https://api.github.com/notifications?access_token=$TOKE
 COUNT1=$(cat ~/.config/sway/conf/github/unread)
 
 	if [ "$notifications" -gt 0 ]; then
-	    echo "$notifications">${HOME}/.config/sway/conf/github/unread
+	    printf "$notifications">${HOME}/.config/sway/conf/github/unread
 	else
-	    echo "0">${HOME}/.config/sway/conf/github/unread
+	    printf "0">${HOME}/.config/sway/conf/github/unread
 	fi
 
 COUNT2=$(cat ~/.config/sway/conf/github/unread)

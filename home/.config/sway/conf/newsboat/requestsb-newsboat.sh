@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "0">$HOME/.config/sway/conf/newsboat/unread
+printf "0">$HOME/.config/sway/conf/newsboat/unread
 sleep 10
 
 while

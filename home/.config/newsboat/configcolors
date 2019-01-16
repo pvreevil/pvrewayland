@@ -1,4 +1,4 @@
-color info color7 color8
-color listfocus color8 color4
+color info color0 color7
+color listfocus color0 color4
 color listnormal_unread color1 color7
 color listfocus_unread color1 color4

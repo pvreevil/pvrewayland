@@ -11,16 +11,16 @@ readable() {
   local bytes=$1
   local kib=$(( bytes >> 10 ))
   if [ $kib -lt 0 ]; then
-    echo "? K"
+    printf "? K"
   elif [ $kib -gt 1024 ]; then
     local mib_int=$(( kib >> 10 ))
     local mib_dec=$(( kib % 1024 * 976 / 10000 ))
     if [ "$mib_dec" -lt 10 ]; then
       mib_dec="0${mib_dec}"
     fi
-    echo "${mib_int}.${mib_dec} M"
+    printf "${mib_int}.${mib_dec} M"
   else
-    echo "${kib} K"
+    printf "${kib} K"
   fi
 }
 

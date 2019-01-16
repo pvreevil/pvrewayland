@@ -15,7 +15,7 @@ default_border pixel 3
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 
-exec swayidle \
-    timeout 300 swaylock \
+exec swayidle -w \
+	timeout 300 swaylock \
 	timeout 900 'doas /home/erika/.local/bin/zzz' \
 
