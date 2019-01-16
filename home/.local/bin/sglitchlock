@@ -4,7 +4,7 @@
 # ┇━┛┇━┛┇ ┇ ┗━┛┇ ┻┇━┛┛━┛┗━┛┇ ┛
 #
 # author: xero <x@xero.nu> http://xero.nu
-# modified : pvreevil
+# modified: pvreevil
 # requires: swaylock, imagemagick, grim
 
 grim /tmp/lock.png
@@ -23,12 +23,13 @@ function datamosh() {
 steps=$(shuf -i 40-70 -n 1)
 for i in $(seq 1 $steps);do datamosh "$file"; done
 
-GLITCHICON="$HOME/.config/swaylock/Lock.png"
+GLITCHICON="$HOME/clones/glitchlock_/Lock.png"
 
 convert /tmp/lock.jpg /tmp/lock.png >/dev/null 2>&1
 rm /tmp/lock.jpg
 
 file=/tmp/lock.png
-convert $file $GLITCHICON -gravity center -geometry 1920x1080 -composite $file 
+size=$(identify $file | awk '{print $3}')
 
+convert $file $GLITCHICON -gravity center -geometry $size -composite $file 
 swaylock -i "$file"
