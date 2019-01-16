@@ -1,0 +1,34 @@
+#!/bin/bash
+# ┏━┓┳  o┏┓┓┏━┓┳ ┳┳  ┏━┓┏━┓┳┏ 
+# ┃ ┳┃  ┃ ┃ ┃  ┃━┫┃  ┃ ┃┃  ┣┻┓
+# ┇━┛┇━┛┇ ┇ ┗━┛┇ ┻┇━┛┛━┛┗━┛┇ ┛
+#
+# author: xero <x@xero.nu> http://xero.nu
+# modified : pvreevil
+# requires: swaylock, imagemagick, grim
+
+grim /tmp/lock.png
+convert /tmp/lock.png /tmp/lock.jpg
+file=/tmp/lock.jpg
+
+function datamosh() {
+	fileSize=$(wc -c < "$file")
+	headerSize=1000
+	skip=$(shuf -i "$headerSize"-"$fileSize" -n 1)
+	count=$(shuf -i 1-10 -n 1)
+	for i in $(seq 1 $count);do byteStr=$byteStr'\x'$(shuf -i 0-255 -n 1); done;   
+	printf $byteStr | dd of="$file" bs=1 seek=$skip count=$count conv=notrunc >/dev/null 2>&1
+}
+
+steps=$(shuf -i 40-70 -n 1)
+for i in $(seq 1 $steps);do datamosh "$file"; done
+
+GLITCHICON="$HOME/.config/swaylock/Lock.png"
+
+convert /tmp/lock.jpg /tmp/lock.png >/dev/null 2>&1
+rm /tmp/lock.jpg
+
+file=/tmp/lock.png
+convert $file $GLITCHICON -gravity center -geometry 1920x1080 -composite $file 
+
+swaylock -i "$file"
