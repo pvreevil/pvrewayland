@@ -14,5 +14,5 @@ exec devmon
 #calibre web
 exec "python ~/clones/calibre-web/cps.py"
 
-exec swaylock
+exec "sleep 0.2 ; sglitchlock"
 
