@@ -1,4 +1,6 @@
-default_border pixel 3
+default_border pixel 7
+
+gaps inner 7
 
 #Idle
 
