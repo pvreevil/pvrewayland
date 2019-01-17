@@ -1,0 +1,41 @@
+
+
+
+set $colorl	#013220
+set $colorm	#cdcd00
+set $colorh	#800000
+
+set $colorf	#000000
+set $colorb	#cd853f
+
+#black
+set $color0	#8b4513
+set $color8	#e26b18
+
+#red
+set $color1	#670000
+set $color9	#800000
+
+#green
+set $color2	#011910
+set $color10	#013220
+
+#yellow
+set $color3	#673800
+set $color11	#b36200
+
+#blue
+set $color4	#002347
+set $color12	#003366
+
+#magenta
+set $color5	#2e004f
+set $color13	#4b0082
+
+#cyan
+set $color6	#0067a5
+set $color14	#0087d8
+
+#white
+set $color7	#000000
+set $color15	#191919
