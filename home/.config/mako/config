@@ -10,3 +10,21 @@ border-color=#670000
 border-size=7
 padding=7
 margin=7
+
+[app-name=menu]
+width=1100
+margin=7,813
+padding=30,39
+format=<span font_weight="regular" underline="none">%s</span>\n%b
+
+
+[app-name=cal]
+margin=0,457
+padding=0,22
+width=248
+height=180
+border-size=2
+background-color=#cd853f
+border-color=#000000
+format=<span font_weight="regular" underline="double">%s</span>\n%b
+
