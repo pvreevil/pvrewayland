@@ -93,7 +93,7 @@
 #amd-ucode/microcode_amd_fam15h.bin.asc
 amd-ucode/microcode_amd_fam15h.bin
 #amd-ucode/microcode_amd.bin.asc
-amd-ucode/microcode_amd.bin
+#amd-ucode/microcode_amd.bin
 #amdgpu/verde_smc.bin
 #amdgpu/verde_rlc.bin
 #amdgpu/verde_pfp.bin
