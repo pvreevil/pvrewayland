@@ -7,7 +7,7 @@ bindsym XF86Tools exec "mpv --player-operation-mode=pseudo-gui"
 bindsym XF86Explorer exec "kitty -e nnn"
 bindsym XF86Mail exec "kitty -e neomutt"
 bindsym XF86HomePage exec "qutebrowser"
-
+bindsym $mod + d exec "makoctl dismiss -a"
 # Basics:
 
     # start a terminal
