@@ -36,58 +36,58 @@ mail-client/neomutt -gdbm
 # required by x11-libs/gdk-pixbuf-2.36.12::gentoo[jpeg2k]
 # required by dev-libs/sway-1.0_beta2::gentoo[swaybar,swaybg,swaylock]
 # required by sway (argument)
->=x11-libs/libdrm video_cards_radeon
+x11-libs/libdrm video_cards_radeon
 # required by dev-libs/wlroots-0.2::gentoo
 # required by dev-libs/sway-1.0_beta2::gentoo
 # required by sway (argument)
->=media-libs/mesa gles2
+media-libs/mesa gles2
 # required by x11-terms/kitty-0.13.1-r1::gentoo
 # required by kitty (argument)
->=x11-libs/libxkbcommon X
+x11-libs/libxkbcommon X
 # required by x11-libs/libxkbcommon-0.8.2::gentoo[X]
 # required by x11-terms/kitty-0.13.1-r1::gentoo
 # required by kitty (argument)
->=x11-libs/libxcb xkb
+x11-libs/libxcb xkb
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-python/PyQt5 multimedia printsupport webengine widgets sql gui declarative network webchannel
+dev-python/PyQt5 multimedia printsupport webengine widgets sql gui declarative network webchannel
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[multimedia]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-qt/qtmultimedia widgets
+dev-qt/qtmultimedia widgets
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-qt/qtwebengine widgets
+dev-qt/qtwebengine widgets
 # required by dev-qt/qtwebengine-5.11.1::gentoo
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-qt/qtwebchannel qml
+dev-qt/qtwebchannel qml
 # required by dev-qt/qtwebengine-5.11.1::gentoo
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-libs/libxml2 icu
+dev-libs/libxml2 icu
 # required by dev-qt/qtwebengine-5.11.1::gentoo
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=media-libs/libvpx svc
+media-libs/libvpx svc
 # required by dev-qt/qtwebengine-5.11.1::gentoo
 # required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=sys-libs/zlib minizip
+sys-libs/zlib minizip
 # required by dev-qt/qtcore-5.11.1-r1::gentoo
 # required by dev-qt/qtxml-5.11.1::gentoo
 # required by dev-python/PyQt5-5.10.1-r1::gentoo
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
->=dev-libs/libpcre2 pcre16
+dev-libs/libpcre2 pcre16
 # required by dev-qt/qtwayland-5.11.1::gentoo
 # required by qtwayland (argument)
->=dev-qt/qtgui egl
+dev-qt/qtgui egl
 # required by media-gfx/fim-0.5_rc3::gentoo[aalib]
 # required by fim (argument)
->=media-libs/aalib slang
+media-libs/aalib slang
