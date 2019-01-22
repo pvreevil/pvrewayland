@@ -19,8 +19,12 @@ c.qt.force_software_rendering = 'chromium'
 
 
 #css theme
-c.content.user_stylesheets = '$HOME/clones/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css'
+#c.content.user_stylesheets = '$HOME/clones/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css'
 
+#fonts
+
+c.fonts.web.size.default = 20
+c.fonts.hints = 'bold 8pt monospace'
 
 # Enable JavaScript.
 # Type: Bool

@@ -1,8 +1,4 @@
 
-
-output HDMI-A-1 mode 1920x1080@60Hz
-output HDMI-A-1 bg ~/Pictures/flowers.png fill
-
 include ~/.config/sway/conf/vintagecolors
 include ~/.config/sway/conf/variables
 include ~/.config/sway/conf/colors
