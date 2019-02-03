@@ -1,19 +1,21 @@
 #!/bin/sh
 
+getvol () {
+
 VOL=$(amixer -M | head -5 | awk -F"[][]" '/dB/ { printf "%0.0f\n", $2 }')
 STATUS=$(amixer sget Master | awk -F"[][]" '/dB/ { print $6 }')
 
 if [ "$STATUS" = "off" ]; then
-	printf ""
+	VOLI=""
 elif [ "$VOL" = "0" ]; then
-	printf ""
+	VOLI=""
 elif [ "$VOL" -gt "59"  ]; then
-		printf " $VOL"
+		VOLI=""
 elif [ "$VOL" -lt "20"  ]; then
-		printf "$VOL"
+		VOLI=""
 	else
-		printf "$VOL"
+		VOLI=""
 fi
-
+}
 #         
 

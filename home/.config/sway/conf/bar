@@ -15,9 +15,9 @@ background $glass
 #statusline $base0A
 statusline $base0A
 #<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
-focused_workspace	$color1		$colorb		$color1
-inactive_workspace	$colorb		$color15	$colorb
-binding_mode		$colorf		$colorb		$colorf
+focused_workspace	$base00		$base0D		$base08
+inactive_workspace	$base00		$base05		$base00
+binding_mode		$base05		$base00		$base05
 #focused_workspace	$glass		$glass		$base0A
 #inactive_workspace	$glass		$glass		$base05
 }

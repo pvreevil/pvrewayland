@@ -1,12 +1,17 @@
 #!/bin/sh
 
 
-colorl=#013220
-colorm=#cdcd00
-colorh=#800000
+#colorl=#013220
+colorl=#8ec07c
+#colorm=#cdcd00
+colorm=#fabd2f
+#colorh=#800000
+colorh=#fb4934
 
-colorf=#000000
-colorb=#cd853f
+#colorf=#000000
+colorf=#d5c4a1
+#colorb=#cd853f
+colorb=#32302f
 
 #black
 color0=#8b4513
@@ -25,7 +30,8 @@ color3=#673800
 color11=#b36200
 
 #blue
-color4=#002347
+#color4=#002347
+color4=#83a598
 color12=#003366
 
 #magenta
