@@ -54,11 +54,11 @@ band()  {
         update_rate
 
 if [ "$up" = "DOWN" ]; then
-         BW=""
+         BW="x x"
 elif [ "$up" = "" ]; then
-         BW=""
+         BW="x x x x"
 else
-         BW="${dwt} ${upt}"
+         BW="${dwt} ${upt}"
 fi
 
 }

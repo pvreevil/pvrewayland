@@ -11,7 +11,7 @@ $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/abar/vintagecolors.sh 
+source $BARPATH/abar/colorsnaturalist.sh 
 source $BARPATH/abar/getcolor.sh
 source $BARPATH/alsa/requestsb-alsa.sh
 c="\"color\":"
@@ -22,7 +22,7 @@ sw="\"separator_block_width\":"
 mw="\"min_width\":"
 ac="\"align\":\"center\""
 ft="\"full_text\":"
-bor="\"border\": \"$colorb\""
+bor="\"border\": \"$colorf\""
 echo '{ "version" : 1 }'
 echo '['
 echo '[]'
@@ -42,27 +42,30 @@ while
 	getvol
 	printf %s	",[
 
-	{$c \"$colorb\",$b \"$gc\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$GPU%\"},
-        {$c \"$colorb\",$b \"$mc\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-        {$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$MEM%\"},
-	{$c \"$colorb\",$b \"$cc\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$CPU%\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw\"2\",$ac,$mw 210,$ft \" $NET \"},
-	{$c \"#fafafa\",$b \"#333333\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$GH\"},
-	{$c \"#cee3f8\",$b \"#ff4500\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$RDD\"},
-	{$c \"#ffffff\",$b \"#f26522\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$RSS\"},
-	{$c \"$colorb\",$b \"$color4\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"$VOLI\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 55,$ft \"$VOL\"},
-	{$c \"$colorb\",$b \"$color4\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 210,$ft \"$(date +'%A, %d - %H:%M')\"},
-	{$c \"$colorb\",$b \"$color4\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 170,$ft \"$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')\"},
-	{$c \"#dddfff\",$b \"#54487a\",$bor,$s,$sw \"-2\",$ac,$mw 25,$ft \"\"},
-	{$c \"$colorb\",$b \"$colorf\",$bor,$s,$sw \"2\",$ac,$mw 170,$ft \"$KERNEL\"},
+	{$c \"$gc\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$GPU%\"},
+        {$c \"$mc\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+        {$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$MEM%\"},
+	{$c \"$cc\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$CPU%\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw\"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw\"0\",$ac,$mw 55,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $1 $2}')\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw\"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw\"0\",$ac,$mw 55,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $3 $4}')\"},
+	{$c \"#fafafa\",$b \"#333333\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$GH\"},
+	{$c \"#cee3f8\",$b \"#ff4500\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$RDD\"},
+	{$c \"#ffffff\",$b \"#f26522\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$RSS\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"$VOLI\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$VOL\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 210,$ft \"$(date +'%A, %d - %H:%M')\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 170,$ft \"$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')\"},
+	{$c \"#dddfff\",$b \"#54487a\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 170,$ft \"$KERNEL\"},
 		]"
 do sleep 0.2
 done

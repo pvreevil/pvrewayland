@@ -1,5 +1,5 @@
 
-include ~/clones/base16-sway/themes/base16-gruvbox-dark-soft.config
+include ~/.config/sway/conf/colorsnaturalist
 include ~/.config/sway/conf/variables
 include ~/.config/sway/conf/colors
 include ~/.config/sway/conf/misc

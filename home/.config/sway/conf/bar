@@ -2,24 +2,20 @@ bar {
 id bar-0
 font pango: Source Code Pro for Powerline 13
 height 30
-gaps 0 0 0 0  
+gaps 7 7 7 7  
 position top 
 strip_workspace_numbers no
 strip_workspace_name yes
 status_command ~/.config/sway/conf/abar/abar1v2.sh
-status_padding 2
-status_edge_padding 2
+status_padding 0
+status_edge_padding 0
 colors {
-#background $base05
-background #d5c4a1
-#statusline $base0A
-statusline $base0A
+background $color4
+statusline $color1
 #<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
-focused_workspace	$base00		$base0D		$base00
-inactive_workspace	$base05		$base05		$base00
-binding_mode		$base05		$base00		$base05
-#focused_workspace	$glass		$glass		$base0A
-#inactive_workspace	$glass		$glass		$base05
+focused_workspace	$color3		$color3		#000000
+inactive_workspace	$color4		$color4		#000000
+#binding_mode		$base05		$base00		$base05
 }
 }
 

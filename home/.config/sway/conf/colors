@@ -1,8 +1,8 @@
 # CLASS			BORDER		BACKGROUND	TEXT		INDICATOR	CHILD_BORDER
 	
-client.focused		$base05 	$base00		$base05		$base0E		$base0D
-client.focused_inactive	$base0D 	$base00		$base05		$base0E		$base05
-client.unfocused	$base00		$base00		$base05		$base0E		$base00
+client.focused		$color3 	$color3		#000000		$color4		$color3
+client.focused_inactive	$color2		$color2		#000000		$color4		$color2
+client.unfocused	$color1		$color1		#000000		$color4		$color1
 #client.unfocused	$base00		$base0C		$base00		$base0E		$base00
 client.urgent		#FF0000		#FF0000		#000000		#000000		#FF0000
 
