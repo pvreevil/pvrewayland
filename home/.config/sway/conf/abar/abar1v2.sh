@@ -24,8 +24,8 @@ ft="\"full_text\":"
 bor="\"border\": \"$colorf\""
 mu="\"markup\": \"pango\""
 rarrow="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 22'></span>\"},"
-rarrow2="{$c \"$color4\",$b \"$00000000\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 22'></span>\"},"
-larrow="{$c \"$color4\",$b \"$00000000\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 22'></span>\"},"
+rarrow2="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 22'></span>\"},"
+larrow="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 22'></span>\"},"
 echo '{ "version" : 1 }'
 echo '['
 echo '[]'
