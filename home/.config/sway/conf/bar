@@ -13,7 +13,7 @@ colors {
 background $color4
 statusline $color1
 #<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
-focused_workspace	$color3		$color3		#000000
+focused_workspace	$color1		$color1		#000000
 inactive_workspace	$color4		$color4		#000000
 binding_mode		#000000		$color4		#000000
 }
