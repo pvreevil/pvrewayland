@@ -21,7 +21,7 @@ media-gfx/fbida ghostscript fbcon
 net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
 
-dev-libs/sway -tray -wallpapers -swayidle -swaynag -swaylock
+dev-libs/sway -tray -wallpapers swayidle -swaynag swaylock
 
 x11-terms/kitty imagemagick doc
 

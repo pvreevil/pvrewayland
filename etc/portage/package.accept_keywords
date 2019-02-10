@@ -2,6 +2,7 @@
 
 
 sys-kernel/gentoo-sources ~amd64
+sys-kernel/ck-sources ~amd64
 sys-fs/btrfs-progs ~amd64
 sys-auth/elogind ~amd64
 
@@ -55,3 +56,11 @@ sys-fs/android-file-transfer-linux ~amd64
 
 # required by fim (argument)
 media-gfx/fim ~amd64
+# required by dev-libs/sway-9999::gentoo[swaylock]
+# required by @selected
+# required by @world (argument)
+dev-libs/swaylock ~amd64
+# required by dev-libs/sway-9999::gentoo[swayidle]
+# required by @selected
+# required by @world (argument)
+dev-libs/swayidle ~amd64
