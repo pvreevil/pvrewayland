@@ -15,7 +15,7 @@ statusline $color1
 #<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
 focused_workspace	$color3		$color3		#000000
 inactive_workspace	$color4		$color4		#000000
-#binding_mode		$base05		$base00		$base05
+binding_mode		#000000		$color4		#000000
 }
 }
 
