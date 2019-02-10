@@ -64,9 +64,9 @@ while
 	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 30,$ft \"$VOLI\"},$rarrow
 	{$c \"$colorf\",$b \"$color4\",$s,$sw \"0\",$ac,$mw 30,$ft \"$VOL\"},$rarrow2
 	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 30,$ft \"\"},$rarrow
-	{$c \"$colorf\",$b \"$color4\",$s,$sw \"0\",$ac,$mw 120,$ft \"$(date +'%A, %d') \"},$rarrow2
+	{$c \"$colorf\",$b \"$color4\",$s,$sw \"0\",$ac,$mw 120,$ft \"$(date +'%A, %d')\"},$rarrow2
 	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 30,$ft \"\"},$rarrow
-	{$c \"$colorf\",$b \"$color4\",$s,$sw \"0\",$ac,$mw 40,$ft \" $(date +'%H:%M')\"},$rarrow2
+	{$c \"$colorf\",$b \"$color4\",$s,$sw \"0\",$ac,$mw 40,$ft \"$(date +'%H:%M')\"},$rarrow2
 		]"
 do sleep 0.2
 done
