@@ -1,11 +1,13 @@
 
 #manual
 
+sys-kernel/gentoo-sources experimental symlink
 sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
 sys-fs/android-file-transfer-linux fuse
 sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
+sys-boot/woeusb minimal
 
 sys-apps/dbus user-session
 sys-apps/openrc -netifrc
@@ -17,6 +19,7 @@ media-gfx/fim aalib -djvu fbcon pdf postscript sdl imagemagick exif
 media-gfx/fbida ghostscript fbcon
 
 net-misc/dhcpcd -udev
+net-misc/aria2 -gnutls bittorent
 
 dev-libs/sway -tray -wallpapers -swayidle -swaynag -swaylock
 
@@ -91,3 +94,7 @@ dev-qt/qtgui egl
 # required by media-gfx/fim-0.5_rc3::gentoo[aalib]
 # required by fim (argument)
 media-libs/aalib slang
+# required by www-client/qutebrowser-1.5.2-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyyaml-3.13 libyaml
