@@ -61,9 +61,11 @@ while
 	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"$VOLI\"},
 	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 55,$ft \"$VOL\"},
 	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
-	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 210,$ft \"$(date +'%A, %d - %H:%M')\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 170,$ft \"$(date +'%A, %d')\"},
+	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 80,$ft \"$(date +'%H:%M')\"},
 	{$c \"$colorf\",$b \"$color3\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
-	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 170,$ft \"$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')\"},
+	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 80,$ft \"$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')\"},
 	{$c \"#dddfff\",$b \"#54487a\",$s,$sw \"0\",$ac,$mw 40,$ft \"\"},
 	{$c \"$colorf\",$b \"$color1\",$s,$sw \"0\",$ac,$mw 170,$ft \"$KERNEL\"},
 		]"

@@ -2,7 +2,7 @@ bar {
 id bar-0
 font pango: Source Code Pro for Powerline 13
 height 30
-gaps 7 7 7 7  
+#gaps 7 7 7 7  
 position top 
 strip_workspace_numbers no
 strip_workspace_name yes
