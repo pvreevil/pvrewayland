@@ -1,4 +1,5 @@
 #!/bin/sh
+#https://github.com/x70b1/polybar-scripts/tree/master/polybar-scripts/notification-github
 
 printf "0">${HOME}/.config/sway/conf/github/unread
 sleep 10

@@ -1,4 +1,5 @@
 #!/bin/env bash
+#https://gist.github.com/BenKerry/0fdb0ac536ff2c62e59f241d318b9d8f
 
 declare -r filter='
 def find_focused_node:

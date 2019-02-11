@@ -1,4 +1,5 @@
 #!/bin/sh
+#https://github.com/Leo-G/DevopsWiki/wiki/How-Linux-CPU-Usage-Time-and-Percentage-is-calculated
 
  PREV_TOTAL=0
  PREV_IDLE=0

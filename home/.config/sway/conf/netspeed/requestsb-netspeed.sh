@@ -1,4 +1,5 @@
 #!/bin/sh
+#http://code.stapelberg.de/git/i3status/tree/contrib/net-speed.sh
 
 # Auto detect interfaces
 ifaces=$(ls /sys/class/net | grep -E '^(eth|wlan|enp|wlp)')
