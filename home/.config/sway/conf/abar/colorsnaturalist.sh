@@ -7,10 +7,10 @@ colorl=#3a4a3f
 colorm=#acaa6c
 colorh=#c84f68
 
-color1=#cdd2d2f2
-color2=#c8bcabf2
-color3=#979083f2
-color4=#d4b8b3f2
+color1=#cdd2d2
+color2=#c8bcab
+color3=#979083
+color4=#d4b8b3
 
 
 

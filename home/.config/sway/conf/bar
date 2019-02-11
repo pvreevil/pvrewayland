@@ -2,7 +2,7 @@ bar {
 id bar-0
 font pango: Source Code Pro for Powerline 13
 height 28
-#gaps 7 7 7 7  
+gaps 7 7 7 7  
 position top 
 strip_workspace_numbers no
 strip_workspace_name yes
@@ -11,7 +11,7 @@ status_padding 0
 status_edge_padding 0
 colors {
 background $color4
-statusline $color1
+#statusline $color4
 #<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
 focused_workspace	$color1		$color1		#000000
 inactive_workspace	$color4		$color4		#000000
