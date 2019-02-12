@@ -26,9 +26,8 @@ mu="\"markup\": \"pango\""
 larrow="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 24'></span>\"},"
 rarrow="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 24'></span>\"},"
 larrow2="{$c \"$color4\",$b \"$color1\",$s,$sw \"0\",$ac,$mu,$ft \"<span font_desc='GoMono Nerd Font Mono 24'></span>\"},"
-echo '{ "version" : 1 }'
-echo '['
-echo '[]'
+
+printf "{ \"version\" : 1 }\n[\n[]\n"
 
 getvar()	{
 	NET=$(cat $BARPATH/netspeed/speed)
