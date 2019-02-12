@@ -2,16 +2,14 @@
 
 pkill requestsb-
 
-export BARPATH=~/.config/sway/conf/
-
 $BARPATH/netspeed/requestsb-netspeed.sh &
 $BARPATH/github/requestsb-github.sh  &
 $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/abar/colorsnaturalist.sh 
-source $BARPATH/abar/getcolor.sh
+source $BARPATH/colorsnaturalist.sh 
+source $BARPATH/getcolor.sh
 source $BARPATH/alsa/requestsb-alsa.sh
 c="\"color\":"
 n="name"

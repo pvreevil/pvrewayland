@@ -16,7 +16,7 @@ alias dumount='udevil umount'
 
 alias mount='doas mount'
 alias umount='doas umount'
-alias newsboat='$HOME/.config/sway/conf/newsboat/nb.sh'
+alias newsboat='$BARPATH/newsboat/nb.sh'
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
