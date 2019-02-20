@@ -1,4 +1,0 @@
-source "$HOME/.vile/filters.rc"
-setv $read-hook HighlightFilterMsg
-set autocolor=100
-setv $autocolor-hook HighlightFilterMsg

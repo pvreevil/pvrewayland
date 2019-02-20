@@ -8,6 +8,8 @@ sys-auth/elogind ~amd64
 
 app-misc/neofetch ~amd64
 
+app-editors/neovim ~amd64
+
 media-video/mpv ~amd64
 media-video/ffmpeg ~amd64
 net-misc/youtube-dl ~amd64
@@ -16,19 +18,7 @@ media-gfx/fbida ~amd64
 
 www-plugins/pdfjs ~amd64
 
-# required by dev-libs/sway-1.0_beta2::gentoo
-# required by sway (argument)
-dev-libs/json-c ~amd64
-# required by dev-libs/sway-1.0_beta2::gentoo
-# required by sway (argument)
-app-text/scdoc ~amd64
-# required by sway (argument)
-=dev-libs/sway-9999 **
-# required by dev-libs/sway-1.0_beta2::gentoo
-# required by sway (argument)
-=dev-libs/wlroots-9999 **
-
-
+dev-libs/wl-clipboard ~amd64
 
 # required by kitty (argument)
 x11-terms/kitty ~amd64
@@ -56,11 +46,38 @@ sys-fs/android-file-transfer-linux ~amd64
 
 # required by fim (argument)
 media-gfx/fim ~amd64
-# required by dev-libs/sway-9999::gentoo[swaylock]
-# required by @selected
-# required by @world (argument)
-dev-libs/swaylock ~amd64
-# required by dev-libs/sway-9999::gentoo[swayidle]
-# required by @selected
-# required by @world (argument)
+
+# required by sway (argument)
+dev-libs/sway ~amd64
+# required by dev-libs/sway-1.0_rc1::gentoo
+# required by sway (argument)
+dev-libs/wlroots ~amd64
+# required by dev-libs/sway-1.0_rc1::gentoo[swayidle]
+# required by sway (argument)
 dev-libs/swayidle ~amd64
+# required by dev-libs/sway-1.0_rc1::gentoo[swaylock]
+# required by sway (argument)
+dev-libs/swaylock ~amd64
+# required by dev-libs/sway-1.0_rc1::gentoo[doc]
+# required by @selected
+# required by @world (argument)
+app-text/scdoc ~amd64
+
+# required by alacritty (argument)
+x11-terms/alacritty ~amd64
+# required by virtual/rust-1.32.0::gentoo
+# required by x11-terms/alacritty-0.2.9::gentoo
+# required by alacritty (argument)
+dev-lang/rust ~amd64
+# required by x11-terms/alacritty-0.2.9::gentoo
+# required by alacritty (argument)
+virtual/rust ~amd64
+#manual, solve cargo blockage
+virtual/cargo ~amd64
+
+# required by app-editors/neovim-0.3.3::gentoo
+# required by neovim (argument)
+dev-libs/msgpack ~amd64
+# required by app-editors/neovim-0.3.3::gentoo[tui]
+# required by neovim (argument)
+dev-libs/unibilium ~amd64

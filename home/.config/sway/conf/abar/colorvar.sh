@@ -7,10 +7,6 @@ colorl=#3a4a3f
 colorm=#acaa6c
 colorh=#c84f68
 
-color1=#cdd2d2
-color2=#c8bcab
-color3=#979083
-color4=#d4b8b3
-
-
-
+clraf=#000000
+clra1=#ef9cd0
+clra2=#bf7ca0

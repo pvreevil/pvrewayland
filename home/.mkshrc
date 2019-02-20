@@ -1,5 +1,4 @@
 
-
 source ~/.shellsource/envs
 #source ~/clones/polyglot/polyglot.sh
 source ~/clones/polyglot/pol/polyglot/polyglot.sh
@@ -9,6 +8,9 @@ HISTFILE=~/.mksh_history
 
 #colors
 
+#export TERM=xterm-256color
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	mkdir /tmp/ghud ; GALLIUM_HUD="cpu,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway
+	
 fi

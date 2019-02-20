@@ -55,7 +55,7 @@ bindsym $mod+d exec "makoctl dismiss"
     bindsym $mod+7 workspace 7 ➐
     bindsym $mod+8 workspace 8 ➑
     bindsym $mod+9 workspace 9 ➒
-    bindsym $mod+0 workspace 10 ➓
+    bindsym $mod+0 workspace 10➓
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1 ➊
     bindsym $mod+Shift+2 move container to workspace 2 ➋

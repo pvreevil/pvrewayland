@@ -21,7 +21,9 @@ media-gfx/fbida ghostscript fbcon
 net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
 
-dev-libs/sway -tray -wallpapers swayidle -swaynag swaylock
+dev-libs/sway -tray -wallpapers swayidle -swaynag swaylock man
+
+app-editors/neovim -clipboard -luajit tui
 
 x11-terms/kitty imagemagick doc
 
@@ -98,3 +100,10 @@ media-libs/aalib slang
 # required by @selected
 # required by @world (argument)
 >=dev-python/pyyaml-3.13 libyaml
+
+
+# required by dev-libs/swayidle-1.2::gentoo[elogind]
+# required by dev-libs/sway-1.0_rc2::gentoo[swayidle]
+# required by @selected
+# required by @world (argument)
+sys-auth/elogind policykit

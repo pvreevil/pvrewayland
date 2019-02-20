@@ -24,7 +24,7 @@ set $launcher "[A]lsamixer  Ca[l] [C]alibre [G]typist Ne[w]sboat 
 bindsym $mod+m mode $launcher
 mode $launcher	{
 	bindsym a	mode "default";exec "$term -e alsamixer"
-	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"	a
+	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"
 	bindsym l	mode "default";exec 'notify-send.sh -a cal "$(cal)" '
 	bindsym g	mode "default";exec "$term -e gtypist"
 	bindsym m	mode "default";exec "$term -e nmon"

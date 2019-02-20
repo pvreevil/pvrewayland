@@ -1,4 +1,4 @@
-alias neofetch='neofetch --size 20% --kitty $HOME/.shellsource/gentoo-signet.png'
+alias neofetch='neofetch --backend off'
 alias ls='ls --color=auto -a'
 alias walh='wal -e --backend haishoku -i'
 alias walc='wal -e --backend colorz -i'
