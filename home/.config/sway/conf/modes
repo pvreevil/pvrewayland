@@ -20,19 +20,19 @@ mode $print {
 }
 
 
-set $launcher "[A]lsamixer  Ca[l] [C]alibre [G]typist Ne[w]sboat N[e]omutt N[m]on [N]nn [Q]utebrowser [V]ile"
+set $launcher "[A]lsamixer [C]alibre [G]typist Ne[w]sboat N[e]omutt N[m]on [N]nn [Q]utebrowser n[V]im"
+
 bindsym $mod+m mode $launcher
 mode $launcher	{
 	bindsym a	mode "default";exec "$term -e alsamixer"
 	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"
-	bindsym l	mode "default";exec 'notify-send.sh -a cal "$(cal)" '
 	bindsym g	mode "default";exec "$term -e gtypist"
 	bindsym m	mode "default";exec "$term -e nmon"
 	bindsym e	mode "default";exec "$term -e neomutt"
 	bindsym n	mode "default";exec "$term -e nnn"	
 	bindsym w	mode "default";exec "$term -e ~/.config/sway/conf/newsboat/nb.sh"
 	bindsym q	mode "default";exec "qutebrowser"
-	bindsym v	mode "default";exec "$term -e vile"
+	bindsym v	mode "default";exec "$term -e nvim"
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
