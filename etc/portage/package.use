@@ -17,6 +17,7 @@ dev-lang/python sqlite
 
 media-gfx/fim aalib -djvu fbcon pdf postscript sdl imagemagick exif
 media-gfx/fbida ghostscript fbcon
+media-gfx/photoqt pdf exif
 
 net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
@@ -107,3 +108,11 @@ media-libs/aalib slang
 # required by @selected
 # required by @world (argument)
 sys-auth/elogind policykit
+
+
+# required by media-gfx/photoqt-1.7.1-r1::gentoo
+# required by photoqt (argument)
+dev-qt/qtmultimedia qml
+# required by media-gfx/photoqt-1.7.1-r1::gentoo[pdf]
+# required by photoqt (argument)
+>=app-text/poppler-0.74.0 qt5
