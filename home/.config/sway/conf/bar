@@ -3,7 +3,7 @@ bar {
 	font pango: Gohu GohuFont Bold
 	height 27
 	gaps 3 3 3 3  
-	position top
+	position bottom
 	strip_workspace_numbers no
 	strip_workspace_name yes
 	status_command ~/.config/sway/conf/abar/abar1v2.sh

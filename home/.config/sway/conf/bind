@@ -11,8 +11,8 @@ bindsym $mod+d exec "makoctl dismiss"
 # Basics:
 
     # start a terminal
-    bindsym $mod+Return exec $term
-	bindsym $mod+Shift+Return exec $term -e tmux
+    bindsym $mod+Return exec $term -e tmux
+#	bindsym $mod+Shift+Return exec $term -e tmux
     # kill focused window
     bindsym $mod+Shift+q kill
 
