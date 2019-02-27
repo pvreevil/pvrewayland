@@ -51,7 +51,7 @@ update_rate() {
 }
 
 band()  {
-        up=$(ip -br link | grep wlp | awk '{print $2}')
+        up=$(ip -br link | grep wlan | awk '{print $2}')
         update_rate
 
 if [ "$up" = "DOWN" ]; then
@@ -63,6 +63,7 @@ else
 fi
 
 }
+
 
 while
 	band
