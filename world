@@ -21,6 +21,7 @@ gui-apps/wl-clipboard
 gui-wm/sway
 mail-client/neomutt
 media-fonts/symbola
+media-gfx/imagemagick
 media-gfx/imv
 media-gfx/photoqt
 media-sound/alsa-utils

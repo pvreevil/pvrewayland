@@ -8,6 +8,16 @@ output HDMI-A-1 mode 1920x1080@60Hz
 #output HDMI-A-1 bg ~/Downloads/wallhaven-461920.jpg fill
 #output HDMI-A-1 bg ~/Downloads/wallhaven-461920.jpg center #222222
 output HDMI-A-1 bg ~/Downloads/wallhaven-689036.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-447149.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-449913.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-260230.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-262714.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-191844.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-32025.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-640476.png fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-685772.jpg fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-674307.png fill
+#output HDMI-A-1 bg ~/Downloads/wallhaven-627408.png fill
 #output * bg $clra1 solid_color
 
 default_border pixel 3
@@ -31,5 +41,7 @@ gaps inner 3
 
 exec swayidle -w \
 	timeout 300 sglitchlock \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
 	timeout 900 'doas /home/erika/.local/bin/zzz' \
 
