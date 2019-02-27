@@ -2,10 +2,10 @@ set $powermenu "[L]ock [S]uspend [R]eboot L[o]gout S[h]utdown"
 bindsym Pause mode $powermenu
 mode $powermenu {
 	bindsym l	mode "default";exec sglitchlock 
-	bindsym s	mode "default";exec sglitchlock;exec "doas /home/erika/.local/bin/zzz"
-	bindsym r	exec "doas reboot"
+	bindsym s	mode "default";exec "loginctl suspend"
+	bindsym r	exec "loginctl reboot"
 	bindsym o	exec "swaymsg exit"
-	bindsym h	exec "doas poweroff"
+	bindsym h	exec "loginctl poweroff"
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
