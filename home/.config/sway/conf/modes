@@ -36,19 +36,19 @@ mode $launcher	{
 	bindsym Return	mode "default"
 	bindsym Escape	mode "default"
 	}
-set $folders " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
+set $folders " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
 bindsym Scroll_Lock mode $folders
 mode $folders	{
 
-	bindsym	1	mode "default";exec "kitty -d=/etc/portage/"
-	bindsym	2	mode "default";exec "kitty -d=~/.config/"
-	bindsym	3	mode "default";exec "kitty -d=~/pvrewayland/"
-	bindsym	4	mode "default";exec "kitty -d=/mnt/hdd1/"
-	bindsym	5	mode "default";exec "kitty -d=/mnt/hdd2/"
-	bindsym	6	mode "default";exec "kitty -d=/media/"
-	bindsym	7	mode "default";exec "kitty -d=~/clones/"
-	bindsym	8	mode "default";exec "kitty -d=~/android/"
-	bindsym	9	mode "default";exec "kitty -d=~/container/"
+	bindsym	1	mode "default";exec "$term --working-directory /etc/portage/"
+	bindsym	2	mode "default";exec "$term --working-directory ~/.config/"
+	bindsym	3	mode "default";exec "$term --working-directory ~/pvrewayland/"
+	bindsym	4	mode "default";exec "$term --working-directory /mnt/hdd1/"
+	bindsym	5	mode "default";exec "$term --working-directory /mnt/hdd2/"
+	bindsym	6	mode "default";exec "$term --working-directory /media/"
+	bindsym	7	mode "default";exec "$term --working-directory ~/clones/"
+	bindsym	8	mode "default";exec "$term --working-directory ~/android/"
+	bindsym	9	mode "default";exec "$term --working-directory ~/luks1/"
 	bindsym Return	mode "default"
 	bindsym	Escape	mode "default"
 }
