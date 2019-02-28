@@ -1869,8 +1869,8 @@ rtlwifi/rtl8192cufw.bin
 #rtlwifi/rtl8192cfwU_B.bin
 #rtlwifi/rtl8192cfwU.bin
 #rtlwifi/rtl8192cfw.bin
-#rtlwifi/rtl8188eufw.bin
-#rtlwifi/rtl8188efw.bin
+rtlwifi/rtl8188eufw.bin
+rtlwifi/rtl8188efw.bin
 #rtw88/rtw8822c_fw.bin
 #rtw88/rtw8822b_fw.bin
 #s2250.fw
