@@ -1,0 +1,16 @@
+#pparker
+
+#fg
+set $clraf #3a2c44
+
+#active ws/window
+set $clra1 #cac8c7
+
+#barbg
+set $clra2 #8a8884
+
+#inactive window
+set $clra3 #9a9a9a
+
+#indicator
+set $clra4 #686159
