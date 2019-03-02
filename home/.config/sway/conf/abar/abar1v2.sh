@@ -6,9 +6,11 @@ $BARPATH/netspeed/requestsb-netspeed.sh &
 $BARPATH/github/requestsb-github.sh  &
 $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
+
+
 #  	▙▜   ▛     ▟ ▚  ▞  
 #JSON
-source $BARPATH/colorvar.sh 
+source $BARPATH/colorvar2.sh 
 source $BARPATH/getcolor.sh
 source $BARPATH/alsa/requestsb-alsa.sh
 c="\"color\":"

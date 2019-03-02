@@ -1,45 +1,15 @@
 
 output HDMI-A-1 mode 1920x1080@60Hz
-#output HDMI-A-1 bg ~/Downloads/r9vHxE8.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-615462.png fill
-#output HDMI-A-1 bg ~/Pictures/flowers2.png fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-694928.png fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-606622.png fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-461920.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-461920.jpg center #222222
-output HDMI-A-1 bg ~/Downloads/wallhaven-689036.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-447149.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-449913.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-260230.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-262714.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-191844.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-32025.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-640476.png fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-685772.jpg fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-674307.png fill
-#output HDMI-A-1 bg ~/Downloads/wallhaven-627408.png fill
+
 #output * bg $clra1 solid_color
 
-default_border pixel 3
+output HDMI-A-1 bg ~/Pictures/textures/av2a.jpg tile #662a48
+
+default_border pixel 6
 
 gaps inner 3
 
-#Idle
-
-# Example configuration:
-#
-#exec swayidle \
-#    timeout 300 'swaylock -c 000000' \
-#    timeout 600 'swaymsg "output * dpms off"' \
-#       resume 'swaymsg "output * dpms on"' \
-#    before-sleep 'swaylock -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
-
 exec swayidle -w \
-	timeout 300 sglitchlock \
-	timeout 600 'loginctl suspend' \
+	timeout 600 sglitchlock \
+	timeout 720 'loginctl suspend' \
 	before-sleep 'sglitchlock' \
