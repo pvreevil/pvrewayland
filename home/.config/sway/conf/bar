@@ -2,7 +2,7 @@ bar {
 	id bar-0
 	font pango: Gohu GohuFont Bold
 	height 23
-	gaps 3 330 3 330  
+	gaps 3 420 3 420
 	position bottom
 	strip_workspace_numbers no
 	strip_workspace_name yes
