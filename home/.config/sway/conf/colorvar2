@@ -1,7 +1,7 @@
 #pparker
 
 #fg
-set $clraf #3a2c44
+set $clraf #000000
 
 #active ws/window
 set $clra1 #cac8c7

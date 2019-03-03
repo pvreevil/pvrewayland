@@ -1,18 +1,18 @@
 bar {
 	id bar-0
 	font pango: Gohu GohuFont Bold
-	height 33
+	height 23
 	gaps 3 330 3 330  
 	position bottom
 	strip_workspace_numbers no
 	strip_workspace_name yes
-	status_command ~/.config/sway/conf/abar/abar1v2.sh
-	status_padding 6
-	status_edge_padding 7
+	status_command ~/.config/sway/conf/abar/abar1v3.sh
+	status_padding 3
+	status_edge_padding 6
 
 colors {
 	background $clra2
-	#statusline $color4
+	statusline $clraf
 	#<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
 	focused_workspace	$clra2		$clra1		$clraf
 	inactive_workspace	$clra2		$clra2		$clraf
