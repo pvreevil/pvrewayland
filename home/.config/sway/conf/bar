@@ -15,7 +15,7 @@ colors {
 	statusline $clraf
 	#<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
 	focused_workspace	$clra2		$clra1		$clraf
-	inactive_workspace	$clra2		$clra2		$clraf
+	inactive_workspace	$clra2		$clra3		$clraf
 	binding_mode		$clraf		$clra1		$clraf
 	}
 }

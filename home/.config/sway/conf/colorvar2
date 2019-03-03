@@ -9,7 +9,7 @@ set $clra1 #cac8c7
 #barbg
 set $clra2 #8a8884
 
-#inactive window
+#inactive window/inactive ws
 set $clra3 #9a9a9a
 
 #indicator
