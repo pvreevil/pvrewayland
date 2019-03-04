@@ -1,3 +1,5 @@
 #!/bin/sh
 
-newsboat -x print-unread | awk '{print $1}' >$BARPATH/newsboat/unread
+NUMBER=$(newsboat -x print-unread | awk '{print $1}')
+
+printf $NUMBER>$BARPATH/newsboat/unread

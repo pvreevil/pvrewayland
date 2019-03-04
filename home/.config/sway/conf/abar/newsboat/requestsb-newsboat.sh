@@ -1,13 +1,15 @@
 #!/bin/sh
 
-printf "0">$BARPATH/newsboat/unread
+printf "?">$BARPATH/newsboat/unread
 sleep 10
 
 while
 
 COUNT1=$(cat $BARPATH/newsboat/unread)
 
-newsboat -x reload print-unread | awk '{print $1}'>$BARPATH/newsboat/unread
+NUMBER=$(newsboat -x reload print-unread | awk '{print $1}')
+
+printf $NUMBER>$BARPATH/newsboat/unread
 
 COUNT2=$(cat $BARPATH/newsboat/unread)
 
