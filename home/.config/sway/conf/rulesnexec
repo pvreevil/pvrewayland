@@ -15,5 +15,5 @@ exec devmon
 exec "python ~/clones/calibre-web/cps.py"
 
 exec "sleep 0.2 ; sglitchlock"
-exec "gamma-control -g 0.98 -b 0.98"
+exec "gamma-control -g 0.94 -b 0.91"
 exec "sleep 0.3 ; swaymsg reload"

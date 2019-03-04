@@ -1,5 +1,5 @@
 
-include ~/.config/sway/conf/colorvar
+include ~/.config/sway/conf/colorvar2
 include ~/.config/sway/conf/variables
 include ~/.config/sway/conf/colors
 include ~/.config/sway/conf/misc
