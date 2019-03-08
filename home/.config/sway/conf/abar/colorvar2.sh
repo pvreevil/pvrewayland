@@ -1,5 +1,4 @@
 #!/bin/sh
-#Sherwin-Williams
 colorf=#000000
 
 colorl=#3a4a3f
