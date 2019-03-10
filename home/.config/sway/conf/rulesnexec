@@ -3,6 +3,7 @@
 
 for_window [title="mpv"] floating enable
 for_window [title="imv"] floating enable
+for_window [app_id="pmnu"] floating enable
 
 #Exec
 

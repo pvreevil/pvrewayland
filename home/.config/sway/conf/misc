@@ -2,6 +2,7 @@
 output HDMI-A-1 mode 1920x1080@60Hz
 
 default_border pixel 3
+default_floating_border pixel 3
 
 gaps inner 3
 

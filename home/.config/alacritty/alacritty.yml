@@ -186,7 +186,7 @@ visual_bell:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 0.985
 
-  background_opacity: 0.1
+background_opacity: 1.0
 
 # Mouse bindings
 #
@@ -500,46 +500,46 @@ key_bindings:
   - { key: NumpadEnter,             chars: "\n"                              }
 
 
-# Base16 Gruvbox dark, soft 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Base16 Nord 256 - alacritty color config
+# arcticicestudio
 colors:
   # Default colors
   primary:
-    background: '0x32302f'
-    foreground: '0xd5c4a1'
+    background: '0x2e3440'
+    foreground: '0xe5e9f0'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x32302f'
-    cursor: '0xd5c4a1'
+    text: '0x2e3440'
+    cursor: '0xe5e9f0'
 
   # Normal colors
   normal:
-    black:   '0x32302f'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+    black:   '0x2e3440'
+    red:     '0x88c0d0'
+    green:   '0xbf616a'
+    yellow:  '0x5e81ac'
+    blue:    '0xebcb8b'
+    magenta: '0xa3be8c'
+    cyan:    '0xd08770'
+    white:   '0xe5e9f0'
 
   # Bright colors
   bright:
-    black:   '0x665c54'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xfbf1c7'
+    black:   '0x4c566a'
+    red:     '0x88c0d0'
+    green:   '0xbf616a'
+    yellow:  '0x5e81ac'
+    blue:    '0xebcb8b'
+    magenta: '0xa3be8c'
+    cyan:    '0xd08770'
+    white:   '0x8fbcbb'
 
   indexed_colors:
-    - { index: 16, color: '0xfe8019' }
-    - { index: 17, color: '0xd65d0e' }
-    - { index: 18, color: '0x3c3836' }
-    - { index: 19, color: '0x504945' }
-    - { index: 20, color: '0xbdae93' }
-    - { index: 21, color: '0xebdbb2' }
+    - { index: 16, color: '0x81a1c1' }
+    - { index: 17, color: '0xb48ead' }
+    - { index: 18, color: '0x3b4252' }
+    - { index: 19, color: '0x434c5e' }
+    - { index: 20, color: '0xd8dee9' }
+    - { index: 21, color: '0xeceff4' }
     - { index: 77, color: '0x3b4f4f' }
