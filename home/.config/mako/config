@@ -2,14 +2,16 @@ sort=+time
 font=Source Code Pro for Powerline 13
 markup=1
 format=<span font_weight="bold" underline="double">%s</span>\n%b
-width=440
-height=500
-background-color=#cd853f
+width=300
+height=600
+background-color=#788685
 text-color=#000000
-border-color=#670000
-border-size=7
-padding=7
-margin=7
+border-color=#3b4f4f
+border-size=3
+padding=3
+margin=3
+anchor=top-left
+layer=overlay
 
 [app-name=menu]
 width=1100
@@ -21,8 +23,8 @@ format=<span font_weight="regular" underline="none">%s</span>\n%b
 [app-name=cal]
 margin=0,457
 padding=0,22
-width=248
-height=180
+width=348
+height=280
 border-size=2
 background-color=#cd853f
 border-color=#000000

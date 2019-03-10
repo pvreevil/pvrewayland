@@ -3,10 +3,10 @@
 #fg
 set $clraf #000000
 
-#active ws/window/bar icon bg
+#active ws/window/bar icon bg/mako bg
 set $clra1 #788685
 
-#barbg/tmux status line
+#base color/barbg(border)/tmux status line/mako border
 set $clra2 #3b4f4f
 
 #inactive window/inactive ws/bar value bg
