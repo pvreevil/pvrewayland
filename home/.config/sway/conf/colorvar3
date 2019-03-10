@@ -1,0 +1,16 @@
+
+#wall #
+#fg
+set $clraf #000000
+
+#active ws/window/bar icon bg
+set $clra1 #788685
+
+#barbg/tmux status line
+set $clra2 #3b4f4f
+
+#inactive window/inactive ws/bar value bg
+set $clra3 #596a6a
+
+#indicator/wall bg
+set $clra4 #10405b

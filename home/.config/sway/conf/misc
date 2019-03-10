@@ -1,11 +1,7 @@
 
 output HDMI-A-1 mode 1920x1080@60Hz
 
-#output * bg $clra1 solid_color
-
-output HDMI-A-1 bg ~/Pictures/textures/av2a.jpg tile #662a48
-
-default_border pixel 6
+default_border pixel 3
 
 gaps inner 3
 

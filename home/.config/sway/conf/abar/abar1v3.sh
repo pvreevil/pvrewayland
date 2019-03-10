@@ -8,7 +8,7 @@ $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/colorvar2.sh 
+source $BARPATH/colorvar3.sh 
 source $BARPATH/getcolor.sh
 source $BARPATH/alsa/requestsb-alsa.sh
 c="\"color\":"
@@ -39,22 +39,22 @@ while
 	getvol
 	printf %s	",[
 			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"ram\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$MEM%\"},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$MEM%\"},
 			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"cpu\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$CPU%\"},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$CPU%\"},
 			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"dw\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $1 $2}')\"},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $1 $2}')\"},
 			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"up\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $3 $4}')\"},
-			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mu, $mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 20'></span>\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$GH\"},
-			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mu, $mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 20'>樓</span>\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$RDD\"},
-			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mu, $mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 16'></span>\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$RSS\"},
-			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mu, $mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 15'>$VOLI</span>\"},
-			{$c \"$clraf\",$b \"$clra2\",$s,$sw 6,$ac,$mw 40,$ft \"$VOL\"},
-			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mu, $mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 19'></span>\"},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $3 $4}')\"},
+			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 20'></span>\",$mu},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$GH\"},
+			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 20'>樓</span>\",$mu},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$RDD\"},
+			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 16'></span>\",$mu},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$RSS\"},
+			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 15'>$VOLI</span>\",$mu},
+			{$c \"$clraf\",$b \"$clra2\",$s,$sw 3,$ac,$mw 42,$ft \"$VOL\"},
+			{$c \"$clraf\",$b \"$clra1\",$s,$sw 0,$ac,$mw 30,$ft \"<span font_desc='mononoki Nerd Font Mono 19'></span>\",$mu},
 			{$c \"$clraf\",$b \"$clra2\",$s,$sw 0,$ac,$mw 180,$ft \"$(date +'%A, %d - %H:%M')\"},
 		]"
 do sleep 0.2
