@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#req jq, galliumHUD
 pkill requestsb-
 
 $BARPATH/netspeed/requestsb-netspeed.sh &
