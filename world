@@ -36,10 +36,10 @@ sys-apps/hdparm
 sys-apps/smartmontools
 sys-apps/udevil
 sys-boot/efibootmgr
-sys-fs/android-file-transfer-linux
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-kernel/gentoo-sources
+sys-kernel/git-sources
 sys-kernel/linux-firmware
 sys-process/nmon
 www-client/qutebrowser
