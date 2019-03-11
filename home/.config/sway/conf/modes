@@ -19,37 +19,3 @@ mode $print {
 	bindsym --locked Escape	mode "default"
 }
 
-
-set $launcher "[A]lsamixer [C]alibre [G]typist Ne[w]sboat N[e]omutt N[m]on [N]nn [Q]utebrowser n[V]im"
-
-bindsym $mod+m mode $launcher
-mode $launcher	{
-	bindsym a	mode "default";exec "$term -e alsamixer"
-	bindsym c	mode "default";exec "qutebrowser http://localhost:8083"
-	bindsym g	mode "default";exec "$term -e tmux new-session gtypist"
-	bindsym m	mode "default";exec "$term -e tmux new-session nmon"
-	bindsym e	mode "default";exec "$term -e tmux new-session neomutt"
-	bindsym n	mode "default";exec "$term -e tmux new-session nnn"	
-	bindsym w	mode "default";exec "$term -e tmux new-session newsboat;$BARPATH/newsboat/nb.sh"
-	bindsym q	mode "default";exec "qutebrowser"
-	bindsym v	mode "default";exec "$term -e tmux new-session nvim"
-	bindsym Return	mode "default"
-	bindsym Escape	mode "default"
-	}
-set $folders " 1.portage 2.config 3.pvrewayland 4.HD1 5.HD2 6.media 7.clones 8.android 9.container"
-bindsym Scroll_Lock mode $folders
-mode $folders	{
-
-	bindsym	1	mode "default";exec "$term --working-directory /etc/portage/"
-	bindsym	2	mode "default";exec "$term --working-directory ~/.config/"
-	bindsym	3	mode "default";exec "$term --working-directory ~/pvrewayland/"
-	bindsym	4	mode "default";exec "$term --working-directory /mnt/hdd1/"
-	bindsym	5	mode "default";exec "$term --working-directory /mnt/hdd2/"
-	bindsym	6	mode "default";exec "$term --working-directory /media/"
-	bindsym	7	mode "default";exec "$term --working-directory ~/clones/"
-	bindsym	8	mode "default";exec "$term --working-directory ~/android/"
-	bindsym	9	mode "default";exec "$term --working-directory ~/luks1/"
-	bindsym Return	mode "default"
-	bindsym	Escape	mode "default"
-}
-

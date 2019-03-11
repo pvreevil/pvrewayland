@@ -1,0 +1,11 @@
+Alsamixer:alsamixer
+Calibre Web:qutebrowser http://localhost:8083 &
+Gtypist:gtypist
+Newsboat:newsboat;$BARPATH/newsboat/nb.sh
+Neomutt:neomutt
+Nmon:nmon
+nnn:nnn
+Nvim:nvim
+PhotoQT:photoqt &
+Qutebrowser:qutebrowser &
+Rtorrent:rtorrent

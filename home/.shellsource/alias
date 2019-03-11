@@ -14,7 +14,12 @@ alias dumount='udevil umount'
 
 alias mount='doas mount'
 alias umount='doas umount'
+
 alias newsboat='newsboat ; $BARPATH/newsboat/nb.sh '
+
+alias bprograms='bmenu -c $HOME/.config/bmenu/plist'
+alias bpoweroff='bmenu -c $HOME/.config/bmenu/power'
+
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
