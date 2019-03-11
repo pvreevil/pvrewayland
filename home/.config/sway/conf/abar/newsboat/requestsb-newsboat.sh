@@ -23,6 +23,6 @@ COUNT2=$(cat $BARPATH/newsboat/unread)
                 notify-send.sh -t 7000 "Newsboat" "$COUNT2 unread $not"
         fi
 
-do sleep 400
+do sleep 900
 
 done
