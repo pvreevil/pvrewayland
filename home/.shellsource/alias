@@ -20,6 +20,8 @@ alias newsboat='newsboat ; $BARPATH/newsboat/nb.sh '
 alias bprogr='bmenu -c $HOME/.config/bmenu/plist'
 alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
 
+alias hblock='hblock -i -S $HOME/.config/hblock/sources'
+
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
