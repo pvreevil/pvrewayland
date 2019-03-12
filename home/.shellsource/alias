@@ -27,7 +27,35 @@ alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
 alias listmerge='emerge -rpv'
 alias ts='echo $(date)>timestamp_"$(date +%m_%d)"'
-alias worldupdate='doas emerge -j 4 -auvND @world; notify-send.sh -t 7000 "@world" "Finished"'
-alias liveupdate='doas emerge -avD @live-rebuild; notify-send.sh -t 7000 "@live-rebuild" "Finished"'
+
+
 #alias sway='mkdir /tmp/ghud ; GALLIUM_HUD="cpu,cpu0,cpu1,cpu2,cpu3,cpu4,cpu5,cpu6,cpu7,VRAM-usage,temperature,fps,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway'
+
 alias sway='mkdir /tmp/ghud ; GALLIUM_HUD="cpu,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway'
+
+
+
+worldupdate(){
+
+pkill swayidle
+
+doas emerge -j 4 -auvND @world
+
+notify-send.sh -t 7000 "@world" "Finished"
+
+swayidle -w timeout 600 sglitchlock timeout 720 'loginctl suspend' before-sleep 'sglitchlock' &>/dev/null &
+
+}
+
+
+liveupdate(){
+
+pkill swayidle
+
+doas emerge -avD @live-rebuild
+
+notify-send.sh -t 7000 "@live-rebuild" "Finished"
+
+swayidle -w timeout 600 sglitchlock timeout 720 'loginctl suspend' before-sleep 'sglitchlock' &>/dev/null &
+
+}
