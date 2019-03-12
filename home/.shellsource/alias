@@ -4,7 +4,6 @@ alias poff='loginctl poweroff'
 alias reboot='loginctl reboot'
 alias zzz='loginctl suspend'
 alias emergequery='emerge --resume -pv'
-alias sync='doas emerge --sync'
 alias backuproot='doas btrfs subvolume snapshot /btrfstoplvl/@gentoo /.snap/root/@$(date +"%Y-%m-%d_%H:%M:%S")'
 alias backuphome='doas btrfs subvolume snapshot /btrfstoplvl/@home /.snap/home/@$(date +"%Y-%m-%d_%H:%M:%S")'
 
@@ -20,7 +19,7 @@ alias newsboat='newsboat ; $BARPATH/newsboat/nb.sh '
 alias bprogr='bmenu -c $HOME/.config/bmenu/plist'
 alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
 
-alias hblock='hblock -i -S $HOME/.config/hblock/sources'
+alias hblock='doas hblock -S $HOME/.config/hblock/sources'
 
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
@@ -55,6 +54,17 @@ pkill swayidle
 doas emerge -avD @live-rebuild
 
 notify-send.sh -t 7000 "@live-rebuild" "Finished"
+
+swayidle -w timeout 600 sglitchlock timeout 720 'loginctl suspend' before-sleep 'sglitchlock' &>/dev/null &
+
+}
+
+
+sync(){
+
+pkill swayidle
+
+doas emerge --sync
 
 swayidle -w timeout 600 sglitchlock timeout 720 'loginctl suspend' before-sleep 'sglitchlock' &>/dev/null &
 
