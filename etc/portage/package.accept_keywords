@@ -18,7 +18,8 @@ media-gfx/fbida ~amd64
 
 www-plugins/pdfjs ~amd64
 
-dev-libs/wl-clipboard ~amd64
+# move dev-libs/wl-clipboard gui-apps/wl-clipboard
+gui-apps/wl-clipboard ~amd64
 
 # required by kitty (argument)
 x11-terms/kitty ~amd64
@@ -48,16 +49,20 @@ sys-fs/android-file-transfer-linux ~amd64
 media-gfx/fim ~amd64
 
 # required by sway (argument)
-dev-libs/sway ~amd64
+# move dev-libs/sway gui-wm/sway
+gui-wm/sway ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo
 # required by sway (argument)
-dev-libs/wlroots ~amd64
+# move dev-libs/wlroots gui-libs/wlroots
+gui-libs/wlroots ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[swayidle]
 # required by sway (argument)
-dev-libs/swayidle ~amd64
+# move dev-libs/swayidle gui-apps/swayidle
+gui-apps/swayidle ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[swaylock]
 # required by sway (argument)
-dev-libs/swaylock ~amd64
+# move dev-libs/swaylock gui-apps/swaylock
+gui-apps/swaylock ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[doc]
 # required by @selected
 # required by @world (argument)
@@ -81,3 +86,5 @@ dev-libs/msgpack ~amd64
 # required by app-editors/neovim-0.3.3::gentoo[tui]
 # required by neovim (argument)
 dev-libs/unibilium ~amd64
+# required by git-sources (argument)
+=sys-kernel/git-sources-5.0_rc8 ~amd64

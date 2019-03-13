@@ -22,7 +22,8 @@ media-gfx/photoqt pdf exif
 net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
 
-dev-libs/sway -tray -wallpapers swayidle -swaynag swaylock man
+# move dev-libs/sway gui-wm/sway
+gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
 
 app-editors/neovim -clipboard -luajit tui
 
