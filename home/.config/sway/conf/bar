@@ -10,7 +10,7 @@ bar {
 	strip_workspace_numbers no
 	strip_workspace_name yes
 	status_command ~/.config/sway/conf/abar/abar1v3.sh
-	status_padding 0
+	status_padding 1
 	status_edge_padding 3
 
 colors {
