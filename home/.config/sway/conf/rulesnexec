@@ -16,5 +16,5 @@ exec devmon
 exec "python ~/clones/calibre-web/cps.py"
 
 exec "sleep 0.2 ; sglitchlock"
-exec "gamma-control -g 0.94 -b 0.87"
+exec "gamma-control -g 0.95 -b 0.95"
 exec_always ~/.config/sway/conf/miscs/wallpaper.sh
