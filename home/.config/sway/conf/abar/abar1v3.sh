@@ -8,7 +8,7 @@ $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/colorvar3.sh 
+source $BARPATH/colorvar4.sh 
 source $BARPATH/getcolor.sh
 source $BARPATH/alsa/requestsb-alsa.sh
 c="\"color\":"
