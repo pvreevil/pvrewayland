@@ -3,15 +3,15 @@ bar {
 	font pango: Gohu GohuFont Bold
 	height 27
 	#bar width 816
-	gaps 3 552 3 552
+	gaps 3 3 3 3
 	position bottom
-	binding_mode_indicator no
-	workspace_buttons no
+	binding_mode_indicator yes
+	workspace_buttons yes
 	strip_workspace_numbers no
 	strip_workspace_name yes
 	status_command ~/.config/sway/conf/abar/abar1v3.sh
 	status_padding 3
-	status_edge_padding 3
+	status_edge_padding 6
 
 colors {
 	background $clra2
@@ -23,7 +23,7 @@ colors {
 	}
 }
 
-bar {
+#bar {
 	id bar-1
 	font pango: Gohu GohuFont Bold
 	height 23
