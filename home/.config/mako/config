@@ -2,7 +2,7 @@ sort=+time
 font=Source Code Pro for Powerline 13
 markup=1
 format=<span font_weight="bold" underline="double">%s</span>\n%b
-width=219
+width=216
 height=600
 background-color=#788685
 text-color=#000000
