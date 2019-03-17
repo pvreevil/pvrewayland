@@ -15,8 +15,8 @@ sys-apps/openrc -netifrc
 #calibre-web
 dev-lang/python sqlite
 
-media-gfx/fim aalib -djvu fbcon pdf postscript sdl imagemagick exif
-media-gfx/fbida ghostscript fbcon
+media-gfx/fim aalib -djvu fbcon pdf -postscript sdl imagemagick exif
+media-gfx/fbida -ghostscript fbcon -gif -tiff -webp
 media-gfx/photoqt pdf exif
 
 net-misc/dhcpcd -udev

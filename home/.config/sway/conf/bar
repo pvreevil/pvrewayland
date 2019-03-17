@@ -1,7 +1,7 @@
 bar {
 	id bar-0
 	font pango: Gohu GohuFont Bold
-	height 21
+	height 18
 	#bar width 816
 	gaps 3 3 3 3
 	position bottom
