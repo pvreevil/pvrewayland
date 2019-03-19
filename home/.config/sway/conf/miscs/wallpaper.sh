@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WALL=$(ls -A $HOME/Pictures/Textures/ | shuf -n 1)
+WALL=$(ls -A $HOME/Pictures/patterns/ | shuf -n 1)
 
-swaymsg "output * bg $HOME/Pictures/Textures/$WALL tile #2e3440"
+swaymsg "output * bg $HOME/Pictures/patterns/$WALL tile #2e3440"
 
