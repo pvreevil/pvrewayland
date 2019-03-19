@@ -7,7 +7,10 @@ sys-kernel/linux-firmware savedconfig
 sys-fs/btrfs-progs -convert
 sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
 
+#mako,sway
 sys-apps/dbus user-session
+
+
 sys-apps/openrc -netifrc
 
 #calibre-web
@@ -90,7 +93,9 @@ media-libs/aalib slang
 # required by @selected
 # required by @world (argument)
 dev-python/pyyaml libyaml
-
+#qutebrowser, manual
+x11-libs/libxkbcommon X
+x11-libs/libxcb xkb
 
 # required by dev-libs/swayidle-1.2::gentoo[elogind]
 # required by dev-libs/sway-1.0_rc2::gentoo[swayidle]
