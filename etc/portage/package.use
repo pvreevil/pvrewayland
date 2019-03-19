@@ -85,7 +85,7 @@ sys-libs/zlib minizip
 dev-libs/libpcre2 pcre16
 # required by dev-qt/qtwayland-5.11.1::gentoo
 # required by qtwayland (argument)
-dev-qt/qtgui egl
+dev-qt/qtgui egl -xcb eglfs
 # required by media-gfx/fim-0.5_rc3::gentoo[aalib]
 # required by fim (argument)
 media-libs/aalib slang
@@ -93,9 +93,8 @@ media-libs/aalib slang
 # required by @selected
 # required by @world (argument)
 dev-python/pyyaml libyaml
-#qutebrowser, manual
-x11-libs/libxkbcommon X
-x11-libs/libxcb xkb
+#qutebrowser, manual to remove "x11-libs/libxkbcommon -X", "x11-libs/libxcb xkb"
+dev-qt/qtwidgets -xcb
 
 # required by dev-libs/swayidle-1.2::gentoo[elogind]
 # required by dev-libs/sway-1.0_rc2::gentoo[swayidle]
