@@ -11,6 +11,7 @@ app-misc/neofetch
 app-misc/nnn
 app-misc/ranger
 app-misc/tmux
+app-portage/genlop
 app-portage/gentoolkit
 app-shells/mksh
 app-text/pastebinit
@@ -21,6 +22,7 @@ gui-apps/wl-clipboard
 gui-wm/sway
 mail-client/neomutt
 media-fonts/symbola
+media-gfx/fim
 media-gfx/imagemagick
 media-gfx/imv
 media-gfx/photoqt
