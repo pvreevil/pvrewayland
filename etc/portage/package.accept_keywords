@@ -2,7 +2,6 @@
 
 
 sys-kernel/gentoo-sources ~amd64
-sys-kernel/ck-sources ~amd64
 sys-fs/btrfs-progs ~amd64
 sys-auth/elogind ~amd64
 
@@ -14,21 +13,10 @@ media-video/mpv ~amd64
 media-video/ffmpeg ~amd64
 net-misc/youtube-dl ~amd64
 
-media-gfx/fbida ~amd64
-
 www-plugins/pdfjs ~amd64
 
 # move dev-libs/wl-clipboard gui-apps/wl-clipboard
 gui-apps/wl-clipboard ~amd64
-
-# required by kitty (argument)
-x11-terms/kitty ~amd64
-# required by x11-terms/kitty-0.13.1-r1::gentoo[wayland]
-# required by kitty (argument)
-dev-libs/wayland-protocols ~amd64
-
-# required by kakoune (argument)
-app-editors/kakoune ~amd64
 
 # required by nnn (argument)
 app-misc/nnn ~amd64
@@ -41,9 +29,6 @@ media-gfx/imv ~amd64
 dev-python/pypeg2 ~amd64
 # required by qutebrowser (argument)
 www-client/qutebrowser ~amd64
-
-# required by android-file-transfer-linux (argument)
-sys-fs/android-file-transfer-linux ~amd64
 
 # required by fim (argument)
 media-gfx/fim ~amd64

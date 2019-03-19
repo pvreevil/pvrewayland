@@ -5,9 +5,7 @@ sys-kernel/gentoo-sources experimental symlink
 sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
-sys-fs/android-file-transfer-linux fuse
 sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
-sys-boot/woeusb minimal
 
 sys-apps/dbus user-session
 sys-apps/openrc -netifrc
@@ -16,7 +14,6 @@ sys-apps/openrc -netifrc
 dev-lang/python sqlite
 
 media-gfx/fim aalib -djvu fbcon pdf -postscript sdl imagemagick exif
-media-gfx/fbida -ghostscript fbcon -gif -tiff -webp
 media-gfx/photoqt pdf exif
 
 net-misc/dhcpcd -udev
@@ -27,9 +24,6 @@ gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
 
 app-editors/neovim -clipboard -luajit tui
 
-x11-terms/kitty imagemagick doc
-
-media-libs/imlib2 X gif jpeg png
 media-libs/libsdl2 gles
 
 media-video/ffmpeg sdl openssl
@@ -49,13 +43,6 @@ x11-libs/libdrm video_cards_radeon
 # required by dev-libs/sway-1.0_beta2::gentoo
 # required by sway (argument)
 media-libs/mesa gles2
-# required by x11-terms/kitty-0.13.1-r1::gentoo
-# required by kitty (argument)
-x11-libs/libxkbcommon X
-# required by x11-libs/libxkbcommon-0.8.2::gentoo[X]
-# required by x11-terms/kitty-0.13.1-r1::gentoo
-# required by kitty (argument)
-x11-libs/libxcb xkb
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
 dev-python/PyQt5 multimedia printsupport webengine widgets sql gui declarative network webchannel
@@ -102,7 +89,7 @@ media-libs/aalib slang
 # required by www-client/qutebrowser-1.5.2-r1::gentoo
 # required by @selected
 # required by @world (argument)
->=dev-python/pyyaml-3.13 libyaml
+dev-python/pyyaml libyaml
 
 
 # required by dev-libs/swayidle-1.2::gentoo[elogind]
@@ -117,4 +104,4 @@ sys-auth/elogind policykit
 dev-qt/qtmultimedia qml
 # required by media-gfx/photoqt-1.7.1-r1::gentoo[pdf]
 # required by photoqt (argument)
->=app-text/poppler-0.74.0 qt5
+app-text/poppler qt5
