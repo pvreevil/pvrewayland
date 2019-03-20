@@ -6,6 +6,8 @@ for_window [title="imv"] floating enable
 
 #Exec
 
+exec $term -e tmux new-session -s sway
+
 exec mako --text-color=$clraf --background-color=$clra1 --border-color=$clra2
 
 exec notify-send.sh -t 7000 "Welcome Back Senpai"
@@ -21,3 +23,6 @@ exec "sleep 0.2 ; sglitchlock"
 exec "gamma-control -g 0.95 -b 0.95"
 
 exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $clra4"
+
+workspace 2 ➋
+
