@@ -3,7 +3,7 @@ include "~/.config/newsboat/configcolors"
 always-display-description yes
 auto-reload yes
 browser "qutebrowser %u &"
-#cache-file "~/.cache/newsboat/cache.db"
+cache-file "~/.cache/newsboat/cache.db"
 #confirm-exit yes
 cookie-cache "~/.cache/newsboat/cookies.txt"
 download-retries 10

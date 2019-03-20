@@ -1,6 +1,6 @@
 #!/bin/sh
 
-printf "?">$BARPATH/newsboat/unread
+printf "0">$BARPATH/newsboat/unread
 sleep 10
 
 while

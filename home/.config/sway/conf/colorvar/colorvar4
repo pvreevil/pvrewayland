@@ -7,7 +7,7 @@ set $clraf #000000
 set $clra1 #e296a7
 
 #base color/barbg(border)/tmux status line/mako border
-set $clra2 #cd607e
+set $clra2 #cd607eff
 
 #inactive window/inactive ws/bar value bg
 set $clra3 #d87b92

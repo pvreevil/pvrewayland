@@ -12,5 +12,5 @@ set $clra2 #3b4f4f
 #inactive window/inactive ws/bar value bg
 set $clra3 #596a6a
 
-#indicator
+#indicator/ wall bg
 set $clra4 #181e1e

@@ -6,8 +6,9 @@ for_window [title="imv"] floating enable
 
 #Exec
 
-exec mako
-exec ~/.config/sway/conf/miscs/loginm.sh 
+exec mako --text-color=$clraf --background-color=$clra1 --border-color=$clra2
+
+exec notify-send.sh -t 7000 "Welcome Back Senpai"
 
 #automount, requires plugdev group
 exec devmon
@@ -16,5 +17,7 @@ exec devmon
 exec "python ~/clones/calibre-web/cps.py"
 
 exec "sleep 0.2 ; sglitchlock"
+
 exec "gamma-control -g 0.95 -b 0.95"
-exec_always ~/.config/sway/conf/miscs/wallpaper.sh
+
+exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $clra4"

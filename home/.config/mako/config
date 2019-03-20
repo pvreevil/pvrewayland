@@ -4,29 +4,8 @@ markup=1
 format=<span font_weight="bold" underline="double">%s</span>\n%b
 width=216
 height=600
-background-color=#788685
-text-color=#000000
-border-color=#3b4f4f
 border-size=3
 padding=3
 margin=3
 anchor=bottom-right
 layer=overlay
-
-[app-name=menu]
-width=1100
-margin=7,813
-padding=30,39
-format=<span font_weight="regular" underline="none">%s</span>\n%b
-
-
-[app-name=cal]
-margin=0,457
-padding=0,22
-width=348
-height=280
-border-size=2
-background-color=#cd853f
-border-color=#000000
-format=<span font_weight="regular" underline="double">%s</span>\n%b
-
