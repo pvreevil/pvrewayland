@@ -1,7 +1,7 @@
 #!/bin/sh
 #https://github.com/x70b1/polybar-scripts/tree/master/polybar-scripts/notification-github
 
-printf "?">$BARPATH/github/unread
+printf "0">$BARPATH/github/unread
 sleep 10
 
 TOKEN=$(head -2 ${HOME}/.config/sway/conf/netvar | tail -1)
