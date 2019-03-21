@@ -7,6 +7,9 @@ sys-kernel/linux-firmware savedconfig
 sys-fs/btrfs-progs -convert
 sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
 
+#remove gnutls
+net-misc/curl -gnutls -nss
+
 #mako,sway
 sys-apps/dbus user-session
 
