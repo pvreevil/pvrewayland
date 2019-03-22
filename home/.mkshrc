@@ -6,6 +6,10 @@ source ~/.shellsource/alias
 HISTSIZE=5000
 HISTFILE=~/.mksh_history
 
+
+bind ^L=clear-screen
+
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	mkdir /tmp/ghud ; GALLIUM_HUD="cpu,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway
 	
