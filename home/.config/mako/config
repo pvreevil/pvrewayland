@@ -7,5 +7,5 @@ height=600
 border-size=3
 padding=3
 margin=3
-anchor=bottom-right
+anchor=top-right
 layer=overlay

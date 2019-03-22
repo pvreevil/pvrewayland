@@ -1,0 +1,12 @@
+
+#fg/active ws, window border, mako border
+set $fg #f5e0e5
+
+#bg, bar and mako/ inactive border / tmux status
+set $bg #b3446c
+
+#indicator
+set $in #d1849a
+
+#wall
+set $wa #063e58
