@@ -19,21 +19,20 @@ sys-apps/openrc -netifrc
 #calibre-web
 dev-lang/python sqlite
 
-media-gfx/fim aalib -djvu fbcon pdf -postscript sdl imagemagick exif
+media-gfx/fim aalib -djvu fbcon pdf -postscript imagemagick exif
 media-gfx/photoqt pdf exif
 
 net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
 
-# move dev-libs/sway gui-wm/sway
 gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
 
 app-editors/neovim -clipboard -luajit tui
 
-media-libs/libsdl2 gles
 
-media-video/ffmpeg sdl openssl
-media-video/mpv drm -xv encode gbm -sdl -libcaca lua
+media-video/ffmpeg openssl
+media-video/mpv drm -xv encode gbm -libcaca lua
+x11-libs/libdrm libkms
 
 www-client/w3m imlib fbcon
 media-libs/imlib2 -shm
