@@ -8,7 +8,7 @@ for_window [title="imv"] floating enable
 
 exec $term -e tmux new-session -s sway
 
-exec mako --text-color=$fg --background-color=$bg --border-color=$fg
+exec mako --text-color=$fg --background-color=$bg2 --border-color=$bg1
 
 exec notify-send.sh -t 7000 "Welcome Back Senpai"
 

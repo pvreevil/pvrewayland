@@ -1,16 +1,12 @@
 
-output HDMI-A-1 mode 1920x1080@60Hz
-
-
 default_border pixel 3
 default_floating_border pixel 3
 
 
 #default_border normal 0
 #default_floating_border normal 0
-font monospaced 0
-#titlebar_border_thickness 208
-#titlebar_padding 6
+#font monospaced 10
+titlebar_padding 6
 
 gaps inner 3
 

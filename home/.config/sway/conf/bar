@@ -1,25 +1,24 @@
 bar {
 	id bar-0
-	font pango: Gohu GohuFont Bold
-	height 21
-	#bar width 816
-	gaps 0 423 3 423
+	font pango: Source Code Pro 8
+	height 16
+	gaps 0 3 3 3
 	position bottom
 	binding_mode_indicator yes
 	workspace_buttons yes
 	strip_workspace_numbers no
 	strip_workspace_name yes
-	status_command ~/.config/sway/conf/abar/abar1v4.sh
-	status_padding 0
-	status_edge_padding 0
+	status_command ~/.config/sway/conf/abar/abar1v3.sh
+	status_padding 1
+	status_edge_padding 3
 
 colors {
 	background $bg
 	statusline $fg
 	#<WORKSPACES>            <BORDER>        <BACKGROUND>    <TEXT>
-	focused_workspace	$bg		$fg		$bg
-	inactive_workspace	$bg		$bg		$fg
-	binding_mode		$fg		$bg		$fg
+	focused_workspace	$bg		$bg1		$fg
+	inactive_workspace	$bg		$bg2		$fg
+	binding_mode		$fg		$bg1		$fg
 	}
 }
 
