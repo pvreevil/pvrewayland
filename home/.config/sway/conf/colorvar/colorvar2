@@ -4,13 +4,13 @@
 set $fg #000000
 
 #bar/tmux status/indicator
-set $bg #3b4f4f
+set $bg #cd607e
 
 #active ws, window border, mako border/ bar icon
-set $bg1 #788685
+set $bg1 #e296a7
 
 #inactive border, ws / mako bg / bar info
-set $bg2 #596a6a
+set $bg2 #d87b92
 
 #wall
-set $wa #5f1933
+set $wa #844153
