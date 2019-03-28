@@ -1,7 +1,7 @@
 
 default_border pixel 3
 default_floating_border pixel 3
-
+floating_maximum_size 848 x 480
 
 #default_border normal 0
 #default_floating_border normal 0
