@@ -6,7 +6,7 @@ floating_maximum_size 848 x 480
 #default_border normal 0
 #default_floating_border normal 0
 #font monospaced 10
-titlebar_padding 6
+#titlebar_paddin 6
 
 gaps inner 3
 
