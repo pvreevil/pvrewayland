@@ -5,7 +5,7 @@ sys-kernel/gentoo-sources experimental symlink
 sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
-sys-fs/cryptsetup -gcrypt kernel pwquality reencrypt
+sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl
 
 #remove gnutls
 net-misc/curl -gnutls -nss
