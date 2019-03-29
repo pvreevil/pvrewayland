@@ -11,7 +11,6 @@ app-misc/neofetch
 app-misc/nnn
 app-misc/ranger
 app-misc/tmux
-app-portage/genlop
 app-portage/gentoolkit
 app-shells/mksh
 app-text/pastebinit
@@ -24,10 +23,11 @@ mail-client/neomutt
 media-fonts/symbola
 media-gfx/fim
 media-gfx/imagemagick
-media-gfx/imv
 media-gfx/photoqt
 media-sound/alsa-utils
 media-video/mpv
+net-analyzer/nethogs
+net-analyzer/speedtest-cli
 net-misc/aria2
 net-misc/dhcpcd
 net-misc/youtube-dl
@@ -45,5 +45,6 @@ sys-kernel/git-sources
 sys-kernel/linux-firmware
 sys-process/nmon
 www-client/qutebrowser
+www-client/w3m
 www-plugins/pdfjs
 x11-terms/alacritty
