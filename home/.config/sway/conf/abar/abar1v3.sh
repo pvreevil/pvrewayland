@@ -8,8 +8,7 @@ $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/colorvar/colorvar1.sh 
-source $BARPATH/colorvar/getcolor.sh
+source $BARPATH/colorvar/colorvar2.sh 
 source $BARPATH/alsa/requestsb-alsa.sh
 bor="\"border\": \"$bg1\""
 c="\"color\":"
@@ -52,9 +51,9 @@ while
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 24,$ft \"$RDD\"},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"<span font_desc='mononoki Nerd Font Mono 11'></span>\",$mu},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 24,$ft \"$RSS\"},
-			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"<span font_desc='mononoki Nerd Font Mono 9'>$VOLI</span>\",$mu},
+			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"<span font_desc='mononoki Nerd Font Mono 9' rise='2000'>$VOLI</span>\",$mu},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 24,$ft \"$VOL\"},
-			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"<span font_desc='mononoki Nerd Font Mono 13'></span>\",$mu},
+			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"<span font_desc='mononoki Nerd Font Mono 13' rise='5100'></span>\",$mu},
 			{$b \"$bg2\",$s,$sw 0,$ac,$mw 99,$ft \"$(date +'%A, %d - %H:%M')\"},
 		]"
 do sleep 0.2
