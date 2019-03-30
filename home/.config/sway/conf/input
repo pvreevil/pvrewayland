@@ -1,20 +1,24 @@
 input "4119:8208:Gaming_Keyboard" {
 	xkb_layout us 
 	xkb_options caps:swapescape
+	xkb_options compose:ralt
 }
 
 input "4119:8208:Gaming_Keyboard_Keyboard" {
 	xkb_layout us 
 	xkb_options caps:swapescape
+	xkb_options compose:ralt
 }
 
 input "4119:8208:Gaming_Keyboard_System_Control" {
 	xkb_layout us 
 	xkb_options caps:swapescape
+	xkb_options compose:ralt
 }
 input "4119:8208:Gaming_Keyboard_Consumer_Control" {
 	xkb_layout us 
 	xkb_options caps:swapescape
+	xkb_options compose:ralt
 }
 
 
