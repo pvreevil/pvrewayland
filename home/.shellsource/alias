@@ -6,6 +6,7 @@ alias zzz='loginctl suspend'
 alias emergequery='emerge --resume -pv'
 alias backuproot='doas btrfs subvolume snapshot /btrfstoplvl/@gentoo /.snap/root/@$(date +"%Y-%m-%d_%H:%M:%S")'
 alias backuphome='doas btrfs subvolume snapshot /btrfstoplvl/@home /.snap/home/@$(date +"%Y-%m-%d_%H:%M:%S")'
+alias nethogs='doas nethogs'
 
 #needs plugdev group
 alias dmount='udevil mount '
