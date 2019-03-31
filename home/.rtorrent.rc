@@ -6,7 +6,16 @@ method.insert = cfg.logs,	private|const|string, (cat,(cfg.basedir),"log/")
 method.insert = cfg.logfile,	private|const|string, (cat,(cfg.logs),"rtorrent-",(system.time),".log")
 method.insert = cfg.session,	private|const|string, (cat,(cfg.basedir),".session/")
 method.insert = cfg.watch,	private|const|string, (cat,(cfg.basedir),"watch/")
+
+
+#Basic operational settings
 directory.default.set = (cat,(cfg.basedir),"download/")
+session.path.set = (cat, (cfg.basedir), ".session")
+directory.default.set = (cat, (cfg.basedir), "download/")
+log.execute = (cat, (cfg.logs), "execute.log")
+##log.xmlrpc = (cat, (cfg.logs), "xmlrpc.log")
+execute.nothrow = bash, -c, (cat, "echo >",\
+    (session.path), "rtorrent.pid", " ", (system.pid))
 
 
 execute.throw = sh, -c, (cat,\
