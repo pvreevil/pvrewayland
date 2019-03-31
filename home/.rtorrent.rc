@@ -1,11 +1,12 @@
 # vim: set syntax=conf:
 
-method.insert = cfg.basedir,	private|const|string, (cat, "/mnt/hdd1/rtorrent")
+method.insert = cfg.basedir,	private|const|string, (cat, "/mnt/hdd1/rtorrent/")
 method.insert = cfg.download,	private|const|string, (cat,(cfg.basedir),"download/")
 method.insert = cfg.logs,	private|const|string, (cat,(cfg.basedir),"log/")
 method.insert = cfg.logfile,	private|const|string, (cat,(cfg.logs),"rtorrent-",(system.time),".log")
 method.insert = cfg.session,	private|const|string, (cat,(cfg.basedir),".session/")
 method.insert = cfg.watch,	private|const|string, (cat,(cfg.basedir),"watch/")
+directory.default.set = (cat,(cfg.basedir),"download/")
 
 
 execute.throw = sh, -c, (cat,\
@@ -23,7 +24,7 @@ dht.mode.set = auto
 protocol.pex.set = 1
 trackers.use_udp.set = yes
 
-throttle.global_down.max_rate.set_kb = 1000
+throttle.global_down.max_rate.set_kb = 500
 throttle.global_up.max_rate.set_kb = 20
 
 
