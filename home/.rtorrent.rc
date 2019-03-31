@@ -33,7 +33,7 @@ dht.mode.set = auto
 protocol.pex.set = 1
 trackers.use_udp.set = yes
 
-throttle.global_down.max_rate.set_kb = 500
+throttle.global_down.max_rate.set_kb = 200
 throttle.global_up.max_rate.set_kb = 20
 
 
