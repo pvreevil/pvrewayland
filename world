@@ -9,7 +9,6 @@ app-misc/gtypist
 app-misc/jq
 app-misc/neofetch
 app-misc/nnn
-app-misc/ranger
 app-misc/tmux
 app-portage/gentoolkit
 app-shells/mksh
@@ -25,6 +24,7 @@ media-gfx/fim
 media-gfx/imagemagick
 media-gfx/photoqt
 media-sound/alsa-utils
+media-sound/cmus
 media-video/mpv
 net-analyzer/nethogs
 net-analyzer/speedtest-cli

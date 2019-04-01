@@ -2,7 +2,6 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 #export XKB_DEFAULT_LAYOUT=us
 export QT_QPA_PLATFORM=wayland-egl
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export RANGER_LOAD_DEFAULT_RC=false
 export BARPATH=~/.config/sway/conf/abar
 export EDITOR=nvim
 export VISUAL=nvim
