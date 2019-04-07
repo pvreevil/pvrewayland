@@ -2,7 +2,6 @@ app-admin/doas
 app-admin/eclean-kernel
 app-arch/atool
 app-arch/lz4
-app-arch/unzip
 app-editors/neovim
 app-eselect/eselect-sh
 app-misc/gtypist
@@ -20,15 +19,11 @@ gui-apps/wl-clipboard
 gui-wm/sway
 mail-client/neomutt
 media-fonts/symbola
-media-gfx/fim
 media-gfx/imagemagick
 media-gfx/photoqt
 media-sound/alsa-utils
-media-sound/cmus
 media-video/mpv
 net-analyzer/nethogs
-net-analyzer/speedtest-cli
-net-misc/aria2
 net-misc/dhcpcd
 net-misc/youtube-dl
 net-news/newsboat
@@ -41,10 +36,7 @@ sys-boot/efibootmgr
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-kernel/gentoo-sources
-sys-kernel/git-sources
 sys-kernel/linux-firmware
 sys-process/nmon
 www-client/qutebrowser
-www-client/w3m
-www-plugins/pdfjs
 x11-terms/alacritty

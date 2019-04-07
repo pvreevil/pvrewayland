@@ -5,3 +5,6 @@ export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export BARPATH=~/.config/sway/conf/abar
 export EDITOR=nvim
 export VISUAL=nvim
+export NNN_USE_EDITOR=1
+export NNN_OPENER=linopen
+export BROWSER=qutebrowser
