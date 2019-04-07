@@ -6,8 +6,6 @@ for_window [title="imv"] floating enable
 
 #Exec
 
-exec $term -e tmux new-session -s sway
-
 exec mako --text-color=$fg --background-color=$bg2 --border-color=$bg1
 
 exec notify-send.sh -t 7000 "Welcome Back Senpai"
@@ -26,5 +24,5 @@ exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/
 
 #exec_always swaymsg "output * bg $HOME/Pictures/r9vHxE8.jpg fill $wa"
 
-workspace 2 ➋
+workspace 2 $ws2
 

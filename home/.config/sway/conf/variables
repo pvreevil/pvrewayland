@@ -5,3 +5,16 @@ set $up k
 set $right l
 set $term alacritty
 set $glass #00000000
+
+
+set $ws1 <span font='Symbola 10'>➊</span>
+set $ws2 <span font='Symbola 10'>➋</span>
+set $ws3 <span font='Symbola 10'>➌</span>
+set $ws4 <span font='Symbola 10'>➍</span>
+set $ws5 <span font='Symbola 10'>➎</span>
+set $ws6 <span font='Symbola 10'>➏</span>
+set $ws7 <span font='Symbola 10'>➐</span>
+set $ws8 <span font='Symbola 10'>➑</span>
+set $ws9 <span font='Symbola 10'>➒</span>
+set $ws10 <span font='Symbola 10'>➓</span>
+					 
