@@ -1,12 +1,12 @@
-sort=+time
+sort=-time
 font=Source Code Pro for Powerline 8
 markup=1
-format=<span font_weight="bold" underline="double">%s</span>\n%b
+format=<span font_weight="bold" underline="single">%s</span>\n%b
 width=216
 height=600
 border-size=3
 border-radius=9
 padding=3
 margin=3
-anchor=top-right
+anchor=bottom-right
 layer=overlay
