@@ -2,7 +2,7 @@ bar {
 	id bar-0
 	font pango: Source Code Pro 8
 	pango_markup enabled
-	height 16
+	height 15
 	gaps 0 3 3 3
 	position bottom
 	binding_mode_indicator yes
