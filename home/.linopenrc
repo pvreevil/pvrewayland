@@ -19,6 +19,7 @@ interm=nvim
 # .png:sxiv
 # .mp4:mplayer
 # .txt:vim
+.pdf:photoqt
 
 # 2. Mime type
 # image/png:sxiv
