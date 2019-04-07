@@ -1,28 +1,17 @@
 #manual
 
 
-sys-kernel/gentoo-sources ~amd64
-sys-fs/btrfs-progs ~amd64
-sys-auth/elogind ~amd64
-
 app-misc/neofetch ~amd64
 
 app-editors/neovim ~amd64
 
 media-video/mpv ~amd64
-media-video/ffmpeg ~amd64
-net-misc/youtube-dl ~amd64
 
-www-plugins/pdfjs ~amd64
-
-# move dev-libs/wl-clipboard gui-apps/wl-clipboard
+#required
 gui-apps/wl-clipboard ~amd64
 
 # required by nnn (argument)
 app-misc/nnn ~amd64
-
-# required by imv (argument)
-media-gfx/imv ~amd64
 
 # required by www-client/qutebrowser-1.5.2::gentoo
 # required by qutebrowser (argument)
@@ -30,23 +19,16 @@ dev-python/pypeg2 ~amd64
 # required by qutebrowser (argument)
 www-client/qutebrowser ~amd64
 
-# required by fim (argument)
-media-gfx/fim ~amd64
-
 # required by sway (argument)
-# move dev-libs/sway gui-wm/sway
 gui-wm/sway ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo
 # required by sway (argument)
-# move dev-libs/wlroots gui-libs/wlroots
 gui-libs/wlroots ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[swayidle]
 # required by sway (argument)
-# move dev-libs/swayidle gui-apps/swayidle
 gui-apps/swayidle ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[swaylock]
 # required by sway (argument)
-# move dev-libs/swaylock gui-apps/swaylock
 gui-apps/swaylock ~amd64
 # required by dev-libs/sway-1.0_rc1::gentoo[doc]
 # required by @selected
@@ -71,6 +53,10 @@ dev-libs/msgpack ~amd64
 # required by app-editors/neovim-0.3.3::gentoo[tui]
 # required by neovim (argument)
 dev-libs/unibilium ~amd64
-# required by git-sources (argument)
-=sys-kernel/git-sources-5.0_rc8 ~amd64
 
+# required by dev-qt/qtwebengine-5.11.3::gentoo
+# required by dev-python/PyQt5-5.10.1-r1::gentoo[webengine]
+# required by www-client/qutebrowser-1.6.1::gentoo
+# required by @selected
+# required by @world (argument)
+media-video/ffmpeg ~amd64

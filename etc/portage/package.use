@@ -13,29 +13,21 @@ net-misc/curl -gnutls -nss
 #mako,sway
 sys-apps/dbus user-session
 
-
 sys-apps/openrc -netifrc
 
 #calibre-web
 dev-lang/python sqlite
 
-media-gfx/fim aalib -djvu fbcon pdf -postscript imagemagick exif
 media-gfx/photoqt pdf exif
 
-net-misc/dhcpcd -udev
 net-misc/aria2 -gnutls bittorent
 
 gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
 
 app-editors/neovim -clipboard -luajit tui
 
-
 media-video/ffmpeg openssl
 media-video/mpv drm -xv encode gbm -libcaca lua
-x11-libs/libdrm libkms
-
-www-client/w3m imlib fbcon
-media-libs/imlib2 -shm
 
 mail-client/neomutt -gdbm
 
@@ -105,7 +97,6 @@ dev-qt/qtwidgets -xcb
 # required by @selected
 # required by @world (argument)
 sys-auth/elogind policykit
-
 
 # required by media-gfx/photoqt-1.7.1-r1::gentoo
 # required by photoqt (argument)
