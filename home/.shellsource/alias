@@ -1,5 +1,5 @@
 alias neofetch='clear ; neofetch --backend off'
-alias ls='ls -A --color=auto -cltp --si'
+alias ls='ls -A --color=auto -cltp --si --group-directories-first'
 alias poff='loginctl poweroff'
 alias reboot='loginctl reboot'
 alias zzz='loginctl suspend'
