@@ -10,6 +10,7 @@ terminal=tmux-256color
 # Specify all programs you want to
 # open in terminal like this:
 interm=nvim
+interm=nnn
 
 # There are 4 ways to match filetypes.
 # The following examples are in the order
@@ -43,7 +44,7 @@ text:nvim
 # Directory rule for directories
 # ideally you want to use file manager
 # here if you are a GUI user.
-directory:echo
+directory:nnn
 
 # Default rule just echoes back whatever
 # was feed. If you are using DE you could

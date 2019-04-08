@@ -10,6 +10,7 @@ app-misc/neofetch
 app-misc/nnn
 app-misc/tmux
 app-portage/gentoolkit
+app-shells/fzy
 app-shells/mksh
 app-text/pastebinit
 dev-python/pip
