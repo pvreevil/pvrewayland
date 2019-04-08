@@ -34,6 +34,9 @@ alias ts='echo $(date)>timestamp_"$(date +%m_%d)"'
 alias sway='mkdir /tmp/ghud ; GALLIUM_HUD="cpu,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway'
 
 
+fopen(){
+	linopen $(find|fzy)
+}
 
 worldupdate(){
 
