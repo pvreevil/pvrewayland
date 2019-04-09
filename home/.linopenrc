@@ -33,7 +33,7 @@ image:photoqt
 video:mpv
 #audio:mpv->interm # you can also specify the interm rule explictly after '->'
 text:nvim
-audio:mocp
+audio:mocp -l
 
 # 4. Regexp
 # Match some protocols by default
