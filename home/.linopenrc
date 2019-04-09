@@ -11,6 +11,7 @@ terminal=tmux-256color
 # open in terminal like this:
 interm=nvim
 interm=nnn
+interm=mocp
 
 # There are 4 ways to match filetypes.
 # The following examples are in the order
@@ -30,8 +31,9 @@ interm=nnn
 # 3. Mime category
 image:photoqt
 video:mpv
-audio:mpv->interm # you can also specify the interm rule explictly after '->'
+#audio:mpv->interm # you can also specify the interm rule explictly after '->'
 text:nvim
+audio:mocp
 
 # 4. Regexp
 # Match some protocols by default
