@@ -1,5 +1,6 @@
 app-admin/doas
 app-admin/eclean-kernel
+app-admin/keepassxc
 app-arch/atool
 app-arch/lz4
 app-editors/neovim
@@ -23,8 +24,10 @@ media-fonts/symbola
 media-gfx/imagemagick
 media-gfx/photoqt
 media-sound/alsa-utils
+media-sound/moc
 media-video/mpv
 net-analyzer/nethogs
+net-fs/curlftpfs
 net-misc/dhcpcd
 net-misc/youtube-dl
 net-news/newsboat
@@ -33,6 +36,7 @@ net-wireless/wpa_supplicant
 sys-apps/hdparm
 sys-apps/smartmontools
 sys-apps/udevil
+sys-auth/oath-toolkit
 sys-boot/efibootmgr
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
