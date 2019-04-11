@@ -7,6 +7,7 @@ alias emergequery='emerge --resume -pv'
 alias backuproot='doas btrfs subvolume snapshot /btrfstoplvl/@gentoo /.snap/root/@$(date +"%Y-%m-%d_%H:%M:%S")'
 alias backuphome='doas btrfs subvolume snapshot /btrfstoplvl/@home /.snap/home/@$(date +"%Y-%m-%d_%H:%M:%S")'
 alias nethogs='doas nethogs'
+alias totp='oathtool --base32 --totp'
 
 #needs plugdev group
 alias dmount='udevil mount '
@@ -22,6 +23,8 @@ alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
 
 alias hblock='doas hblock -S $HOME/.config/hblock/sources'
 
+alais otcry='doas cryptsetup tcryptOpen'
+alais ctcry='doas cryptsetup tcryptClose'
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
