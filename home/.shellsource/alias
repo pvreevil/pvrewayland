@@ -23,8 +23,8 @@ alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
 
 alias hblock='doas hblock -S $HOME/.config/hblock/sources'
 
-alais otcry='doas cryptsetup tcryptOpen'
-alais ctcry='doas cryptsetup tcryptClose'
+alias otcry='doas cryptsetup tcryptOpen'
+alias ctcry='doas cryptsetup tcryptClose'
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
