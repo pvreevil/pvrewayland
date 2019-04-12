@@ -3,9 +3,9 @@
 pkill requestsb-
 
 $BARPATH/netspeed/requestsb-netspeed.sh &
-#$BARPATH/github/requestsb-github.sh  &
-#$BARPATH/newsboat/requestsb-newsboat.sh      &
-#$BARPATH/reddit/requestsb-reddit.sh  &
+$BARPATH/github/requestsb-github.sh  &
+$BARPATH/newsboat/requestsb-newsboat.sh      &
+$BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
 source $BARPATH/colorvar/colorvar2.sh 

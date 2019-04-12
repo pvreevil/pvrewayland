@@ -1,5 +1,0 @@
-Lock:sglitchlock
-Logout:swaymsg exit
-Reboot:loginctl reboot
-Suspend:loginctl suspend
-Shutdown:loginctl poweroff
