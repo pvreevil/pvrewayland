@@ -34,6 +34,7 @@ net-news/newsboat
 net-p2p/rtorrent
 net-wireless/wpa_supplicant
 sys-apps/hdparm
+sys-apps/moreutils
 sys-apps/smartmontools
 sys-apps/udevil
 sys-auth/oath-toolkit
@@ -44,4 +45,5 @@ sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-process/nmon
 www-client/qutebrowser
+x11-misc/qtfm
 x11-terms/alacritty
