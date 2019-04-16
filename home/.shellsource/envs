@@ -8,3 +8,4 @@ export VISUAL=nvim
 export NNN_USE_EDITOR=1
 export NNN_OPENER=linopen
 export BROWSER=qutebrowser
+export BORG_REPO=/mnt/hdd2/backupHDD1

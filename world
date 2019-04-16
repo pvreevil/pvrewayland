@@ -3,8 +3,10 @@ app-admin/eclean-kernel
 app-admin/keepassxc
 app-arch/atool
 app-arch/lz4
+app-backup/borgbackup
 app-editors/neovim
 app-eselect/eselect-sh
+app-misc/detox
 app-misc/gtypist
 app-misc/jq
 app-misc/neofetch

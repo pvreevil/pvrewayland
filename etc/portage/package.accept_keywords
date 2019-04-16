@@ -60,3 +60,10 @@ dev-libs/unibilium ~amd64
 # required by @selected
 # required by @world (argument)
 media-video/ffmpeg ~amd64
+# required by oath-toolkit (argument)
+=sys-auth/oath-toolkit-2.6.2 ~amd64
+# required by kpcli (argument)
+=app-admin/kpcli-3.2 ~amd64
+# required by app-admin/kpcli-3.2::gentoo
+# required by kpcli (argument)
+=dev-perl/File-KeePass-2.30.0-r1 ~amd64

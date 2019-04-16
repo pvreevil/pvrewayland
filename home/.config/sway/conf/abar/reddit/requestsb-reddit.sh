@@ -4,7 +4,7 @@
 printf "0">$BARPATH/reddit/unread
 sleep 10
 
-URL=$(head -1 ${HOME}/.config/sway/conf/netvar)
+URL=$(head -1 $BARPATH/netvar)
 USERAGENT="swaybar/notification-reddit:v1.0 u/pvreevil"
 
 while

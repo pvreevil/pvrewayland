@@ -3,6 +3,8 @@
 
 config_version: 2
 settings:
+  downloads.location.directory:
+    global: /mnt/hdd1/downloads
   url.default_page:
     global: https://apps.disroot.org/
   url.searchengines:

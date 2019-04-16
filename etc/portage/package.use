@@ -7,6 +7,11 @@ sys-kernel/linux-firmware savedconfig
 sys-fs/btrfs-progs -convert
 sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl
 
+sys-apps/portage -rsync-verify
+sys-apps/smartmontools -daemon
+
+dev-vcs/git -gpg
+
 #remove gnutls
 net-misc/curl -gnutls -nss
 
@@ -26,8 +31,11 @@ gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
 
 app-editors/neovim -clipboard -luajit tui
 
+app-text/pastebinit -crypt
+
 media-video/ffmpeg openssl
 media-video/mpv drm -xv encode gbm -libcaca lua
+media-sound/moc ffmpeg aac vorbis
 
 mail-client/neomutt -gdbm
 

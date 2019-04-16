@@ -4,7 +4,7 @@
 printf "0">$BARPATH/github/unread
 sleep 10
 
-TOKEN=$(head -2 ${HOME}/.config/sway/conf/netvar | tail -1)
+TOKEN=$(head -2 $BARPATH/netvar | tail -1)
 
 
 while
