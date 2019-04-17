@@ -106,4 +106,8 @@ ram(){
 	fi
 }
 					      
+swall(){
 
+swaymsg "output * bg '$(readlink -f .)/"$1"' fill #000000"
+
+}

@@ -233,7 +233,7 @@ FormatString = "%(a:%a - :)%(t:%t:)"
 #
 # Example:    Theme = laras_theme
 #
-Theme = nightly_theme
+Theme = nightshade
 
 # The theme used when running on an xterm.
 #
