@@ -25,6 +25,7 @@ mail-client/neomutt
 media-fonts/symbola
 media-gfx/imagemagick
 media-gfx/photoqt
+media-plugins/alsa-plugins
 media-sound/alsa-utils
 media-sound/moc
 media-video/mpv
