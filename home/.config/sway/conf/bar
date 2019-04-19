@@ -3,7 +3,7 @@ bar {
 	font pango: Source Code Pro 8
 	pango_markup enabled
 	height 15
-	gaps 0 3 3 3
+	gaps 0 300 3 300
 	position bottom
 	binding_mode_indicator yes
 	workspace_buttons yes

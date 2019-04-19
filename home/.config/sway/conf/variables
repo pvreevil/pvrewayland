@@ -4,7 +4,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $glass #00000000
+set $gla #00000000
 
 
 set $ws1 <span font='Symbola 10'>➊</span>
