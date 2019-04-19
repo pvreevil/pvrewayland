@@ -35,7 +35,7 @@ app-text/pastebinit -crypt
 
 media-video/ffmpeg openssl
 media-video/mpv drm -xv encode gbm -libcaca lua
-media-sound/moc ffmpeg aac vorbis
+media-sound/moc ffmpeg aac vorbis flac libsamplerate
 
 mail-client/neomutt -gdbm
 
