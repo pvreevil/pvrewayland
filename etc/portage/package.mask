@@ -1,5 +1,1 @@
 =sys-fs/lvm2-2.02.183
->virtual/rust-1.33.0
->dev-lang/rust-1.33.0
->virtual/cargo-1.33.0
-
