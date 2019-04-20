@@ -16,6 +16,8 @@ alias mount='doas mount'
 alias umount='doas umount'
 
 alias newsboat='newsboat ; $BARPATH/newsboat/nb.sh '
+alias google='surfraw google'
+alias gutenberg='surfraw gutenberg'
 
 alias bprogr='bmenu -c $HOME/.config/bmenu/plist'
 alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
