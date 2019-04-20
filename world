@@ -47,6 +47,8 @@ sys-fs/cryptsetup
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-process/nmon
+www-client/links
 www-client/qutebrowser
+www-client/surfraw
 x11-misc/qtfm
 x11-terms/alacritty
