@@ -30,6 +30,7 @@ media-sound/moc
 media-video/mpv
 net-analyzer/nethogs
 net-fs/curlftpfs
+net-ftp/uftpd
 net-misc/dhcpcd
 net-misc/youtube-dl
 net-news/newsboat
