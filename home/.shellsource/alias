@@ -31,7 +31,7 @@ alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
 alias listmerge='emerge -rpv'
 alias ts='echo $(date)>timestamp_"$(date +%m_%d)"'
-alias mountftp='curlftpfs ftp://192.168.43.1:2211 $HOME/ftp/'
+alias mountftp='curlftpfs ftp://192.168.0.100:2211 $HOME/ftp/'
 alias sharehdd1='uftpd -l debug -n -o tftp=0,ftp=2121,writable /mnt/hdd1/'
 
 #alias sway='mkdir /tmp/ghud ; GALLIUM_HUD="cpu,cpu0,cpu1,cpu2,cpu3,cpu4,cpu5,cpu6,cpu7,VRAM-usage,temperature,fps,GPU-load" GALLIUM_HUD_PERIOD=0.1 GALLIUM_HUD_DUMP_DIR="/tmp/ghud" GALLIUM_HUD_VISIBLE="false" dbus-run-session sway'
