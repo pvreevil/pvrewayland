@@ -40,6 +40,8 @@ while
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$MEM%\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"cpu\"},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$CPU%\",$bor},
+			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"ssid\"},
+			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $5 $6}')\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"dw\"},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$(cat $BARPATH/netspeed/speed | awk '{print $1 $2}')\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"up\"},
