@@ -71,3 +71,11 @@ media-video/ffmpeg ~amd64
 # required by app-admin/kpcli-3.2::gentoo
 # required by kpcli (argument)
 =dev-perl/File-KeePass-2.30.0-r1 ~amd64
+# required by net-ftp/uftpd-2.7::gentoo
+# required by uftpd (argument)
+=dev-libs/libuev-2.2.0 ~amd64
+# required by net-ftp/uftpd-2.7::gentoo
+# required by uftpd (argument)
+=dev-libs/libite-2.0.0 ~amd64
+# required by uftpd (argument)
+=net-ftp/uftpd-2.7 ~amd64
