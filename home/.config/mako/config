@@ -1,6 +1,7 @@
 sort=-time
 font=Source Code Pro for Powerline 8
 markup=1
+icons=1
 format=<span font_weight="bold" underline="none">%s</span>\n%b
 width=216
 height=600
