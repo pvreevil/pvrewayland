@@ -1,4 +1,4 @@
-sort=-time
+sort=+time
 font=Source Code Pro for Powerline 8
 markup=1
 icons=1
@@ -9,5 +9,5 @@ border-size=3
 border-radius=9
 padding=3
 margin=3
-anchor=bottom-right
+anchor=top-left
 layer=overlay
