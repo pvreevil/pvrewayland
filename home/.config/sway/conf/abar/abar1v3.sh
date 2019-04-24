@@ -10,6 +10,7 @@ $BARPATH/reddit/requestsb-reddit.sh  &
 #JSON
 source $BARPATH/colorvar/colorvar3.sh 
 source $BARPATH/alsa/requestsb-alsa.sh
+source $BARPATH/moc/requestsb-mocp.sh
 bor="\"border\": \"$bg1\""
 c="\"color\":"
 n="name"
@@ -35,7 +36,10 @@ getvar()	{
 while
 	getvar
 	getvol
+	mocstate
 	printf %s	",[
+			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"\"},
+			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$MOC\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"ram\"},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$MEM%\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"cpu\"},
