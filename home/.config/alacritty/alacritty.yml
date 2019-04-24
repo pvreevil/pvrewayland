@@ -382,7 +382,7 @@ key_bindings:
   #- { key: Insert,   mods: Shift,         action: PasteSelection   }
   #- { key: Key0,     mods: Control,       action: ResetFontSize    }
   #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
 
   # (macOS only)
   #- { key: Key0,   mods: Command, action: ResetFontSize    }
@@ -500,45 +500,45 @@ key_bindings:
   - { key: NumpadEnter,             chars: "\n"                              }
 
 
-# Base16 Atelier Savanna 256 - alacritty color config
-# Bram de Haan (http://atelierbramdehaan.nl)
+# Base16 Gruvbox dark, soft 256 - alacritty color config
+# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 colors:
   # Default colors
   primary:
-    background: '0x171c19'
-    foreground: '0x87928a'
+    background: '0x32302f'
+    foreground: '0xd5c4a1'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x171c19'
-    cursor: '0x87928a'
+    text: '0x32302f'
+    cursor: '0xd5c4a1'
 
   # Normal colors
   normal:
-    black:   '0x171c19'
-    red:     '0xb16139'
-    green:   '0x489963'
-    yellow:  '0xa07e3b'
-    blue:    '0x478c90'
-    magenta: '0x55859b'
-    cyan:    '0x1c9aa0'
-    white:   '0x87928a'
+    black:   '0x32302f'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xfabd2f'
+    blue:    '0x83a598'
+    magenta: '0xd3869b'
+    cyan:    '0x8ec07c'
+    white:   '0xd5c4a1'
 
   # Bright colors
   bright:
-    black:   '0x5f6d64'
-    red:     '0xb16139'
-    green:   '0x489963'
-    yellow:  '0xa07e3b'
-    blue:    '0x478c90'
-    magenta: '0x55859b'
-    cyan:    '0x1c9aa0'
-    white:   '0xecf4ee'
+    black:   '0x665c54'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xfabd2f'
+    blue:    '0x83a598'
+    magenta: '0xd3869b'
+    cyan:    '0x8ec07c'
+    white:   '0xfbf1c7'
 
   indexed_colors:
-    - { index: 16, color: '0x9f713c' }
-    - { index: 17, color: '0x867469' }
-    - { index: 18, color: '0x232a25' }
-    - { index: 19, color: '0x526057' }
-    - { index: 20, color: '0x78877d' }
-    - { index: 21, color: '0xdfe7e2' }
+    - { index: 16, color: '0xfe8019' }
+    - { index: 17, color: '0xd65d0e' }
+    - { index: 18, color: '0x3c3836' }
+    - { index: 19, color: '0x504945' }
+    - { index: 20, color: '0xbdae93' }
+    - { index: 21, color: '0xebdbb2' }

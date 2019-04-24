@@ -24,7 +24,7 @@ exec "sleep 0.2 ; sglitchlock"
 
 #exec_always swaymsg "output * bg $HOME/Pictures/r9vHxE8.jpg fill $wa"
 
-exec_always swaymsg "output * bg /mnt/hdd1/downloads/005.jpg fill $wa"
+exec_always swaymsg "output * bg /mnt/hdd1/downloads/15378AJDH.jpg fill $wa"
 
 workspace 2 $ws2
 

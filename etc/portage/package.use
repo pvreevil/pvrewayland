@@ -13,7 +13,7 @@ sys-apps/smartmontools -daemon
 dev-vcs/git -gpg
 
 #remove gnutls
-net-misc/curl -gnutls -nss
+net-misc/curl -gnutls -nss adns -threads
 
 #mako,sway
 sys-apps/dbus user-session

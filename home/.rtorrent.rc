@@ -40,18 +40,18 @@ throttle.global_up.max_rate.set_kb = 20
 throttle.max_uploads.set = 50
 throttle.max_downloads.set = 50
 
-throttle.max_downloads.global.set = 300
-throttle.max_uploads.global.set = 300
+throttle.max_downloads.global.set = 200
+throttle.max_uploads.global.set = 200
 
-throttle.min_peers.normal.set = 100
-throttle.max_peers.normal.set =  1000
+throttle.min_peers.normal.set = 20
+throttle.max_peers.normal.set =  100
 throttle.min_peers.seed.set = -1
 throttle.max_peers.seed.set = -1
 trackers.numwant.set = -1
 
-pieces.memory.max.set = 4096M
+pieces.memory.max.set = 4000M
 pieces.preload.type.set = 2
 
-network.max_open_sockets.set = 999
+network.max_open_sockets.set = 666
 
 protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
