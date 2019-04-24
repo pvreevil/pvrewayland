@@ -10,14 +10,14 @@ if [[ -f $p/$cover ]]; then
 
 	cp "$p/$cover" /tmp/cover.png
 
-	notify-send.sh -i /tmp/cover.png -t 9000 "$(mocp -Q %a) - $(mocp -Q %song)"
+	notify-send.sh -i /tmp/cover.png -t 9000 "$(mocp -Q "%a - %song")"
 
 elif [[ -f $p/../$coverup ]]; then
 
 	cp "$p/../$coverup" /tmp/cover.png
 
-	notify-send.sh -i /tmp/cover.png -t 9000 "$(mocp -Q %a) - $(mocp -Q %song)"
+	notify-send.sh -i /tmp/cover.png -t 9000 "$(mocp -Q "%a - %song")"
 
 else
-	notify-send.sh -t 9000 "$(mocp -Q %a) - $(mocp -Q %song)"
+	notify-send.sh -t 9000 "$(mocp -Q "%a - %song")"
 fi
