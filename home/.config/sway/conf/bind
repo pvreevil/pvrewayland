@@ -2,9 +2,8 @@
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2%+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2%- unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"
-bindsym XF86Tools exec "mpv --player-operation-mode=pseudo-gui"
-bindsym XF86Explorer exec "kitty -e nnn"
-bindsym XF86Mail exec "kitty -e neomutt"
+bindsym XF86Tools exec "$term -e mocp"
+bindsym XF86Explorer exec "$term -e nnn"
 bindsym XF86HomePage exec "qutebrowser"
 bindsym $mod+d exec "makoctl dismiss"
 
