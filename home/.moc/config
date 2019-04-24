@@ -680,7 +680,7 @@ Theme = nightshade
 #
 # Example:    OnSongChange = "/home/jack/.moc/myscript %a %r"
 #
-OnSongChange = "/home/erika/.local/bin/mocnot.sh %f"
+OnSongChange = "/home/erika/.local/bin/mocnot.sh"
 
 # If RepeatSongChange is 'yes' then MOC will execute the command every time
 # a song starts playing regardless of whether or not it is just repeating.

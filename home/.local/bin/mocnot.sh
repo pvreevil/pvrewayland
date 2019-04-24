@@ -1,7 +1,7 @@
 #!/bin/sh
 
-
-p=`dirname "$1"`
+f=`mocp -Q %file`
+p=`dirname "$f"`
 if [[ -f $p/folder.png ]]; then
 	cp "$p/folder.png" /tmp/folder.png
 	notify-send.sh -i /tmp/folder.png -t 9000 "$(mocp -Q %a) - $(mocp -Q %song)"
