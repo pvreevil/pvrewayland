@@ -20,9 +20,11 @@ exec "sleep 0.2 ; sglitchlock"
 
 #exec "gamma-control -g 0.95 -b 0.95"
 
-exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $wa"
+#exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $wa"
 
 #exec_always swaymsg "output * bg $HOME/Pictures/r9vHxE8.jpg fill $wa"
+
+exec_always swaymsg "output * bg /mnt/hdd1/downloads/005.jpg fill $wa"
 
 workspace 2 $ws2
 
