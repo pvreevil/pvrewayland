@@ -1,15 +1,13 @@
 #manual
 
-sys-kernel/gentoo-sources ~amd64
-sys-fs/btrfs-progs ~amd64
+#sys-kernel/gentoo-sources ~amd64
+#sys-fs/btrfs-progs ~amd64
 
 app-misc/neofetch ~amd64
 
 app-editors/neovim ~amd64
 
 media-video/mpv ~amd64
-
-x11-plugins/pidgin-telegram ~amd64
 
 #required
 gui-apps/wl-clipboard ~amd64
