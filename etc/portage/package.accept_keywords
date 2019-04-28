@@ -77,3 +77,8 @@ media-video/ffmpeg ~amd64
 =dev-libs/libite-2.0.0 ~amd64
 # required by uftpd (argument)
 =net-ftp/uftpd-2.7 ~amd64
+# required by nyx (argument)
+=net-misc/nyx-2.1.0 ~amd64
+# required by net-misc/nyx-2.1.0::gentoo
+# required by nyx (argument)
+=net-libs/stem-1.7.1 ~amd64

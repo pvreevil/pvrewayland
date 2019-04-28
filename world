@@ -32,12 +32,13 @@ net-analyzer/nethogs
 net-fs/curlftpfs
 net-ftp/uftpd
 net-misc/dhcpcd
+net-misc/nyx
 net-misc/youtube-dl
 net-news/newsboat
 net-p2p/rtorrent
+net-vpn/tor
 net-wireless/wpa_supplicant
 sys-apps/hdparm
-sys-apps/moreutils
 sys-apps/smartmontools
 sys-apps/udevil
 sys-auth/oath-toolkit
@@ -47,8 +48,5 @@ sys-fs/cryptsetup
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-process/nmon
-www-client/links
 www-client/qutebrowser
-www-client/surfraw
-x11-misc/qtfm
 x11-terms/alacritty

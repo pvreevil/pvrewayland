@@ -37,9 +37,9 @@ media-video/ffmpeg openssl
 media-video/mpv drm -xv encode gbm -libcaca lua
 media-sound/moc ffmpeg aac vorbis flac libsamplerate
 
+net-vpn/tor lzma tor-hardening zstd
+
 www-client/links -fbcon -jpeg
-net-im/pidgin -dbus -gstreamer -xscreensaver
-x11-plugins/pidgin-telegram
 
 # required by media-libs/mesa-18.2.8::gentoo[-video_cards_r100,video_cards_radeonsi,-video_cards_radeon,-video_cards_r300,-video_cards_r600,-video_cards_r200]
 # required by virtual/opengl-7.0-r2::gentoo

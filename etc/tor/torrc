@@ -1,0 +1,14 @@
+#
+# Minimal torrc so tor will work out of the box
+#
+User tor
+PIDFile /var/run/tor/tor.pid
+Log notice syslog
+DataDirectory /var/lib/tor/data
+ControlPort 9051
+CookieAuthentication 1
+CookieAuthFile /var/lib/tor/control_auth_cookie
+CookieAuthFileGroupReadable 1
+DataDirectoryGroupReadable 1
+CacheDirectoryGroupReadable 1 # workaround for tor bug #26913
+

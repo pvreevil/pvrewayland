@@ -15,12 +15,7 @@ alias dumount='udevil umount'
 alias mount='doas mount'
 alias umount='doas umount'
 
-alias newsboat='newsboat ; $BARPATH/newsboat/nb.sh '
-alias google='surfraw google'
-alias gutenberg='surfraw gutenberg'
-
-alias bprogr='bmenu -c $HOME/.config/bmenu/plist'
-alias bpmenu='bmenu -c $HOME/.config/bmenu/power'
+alias news='newsboat ; $BARPATH/newsboat/nb.sh '
 
 alias hblock='doas hblock -S $HOME/.config/hblock/sources'
 
@@ -29,7 +24,6 @@ alias ctcry='doas cryptsetup tcryptClose'
 alias oluks='doas cryptsetup luksOpen'
 alias cluks='doas cryptsetup luksClose'
 alias nluks='doas cryptsetup --type luks -c serpent-xts-plain64 -s 512 --hash whirlpool luksFormat'
-alias listmerge='emerge -rpv'
 alias ts='echo $(date)>timestamp_"$(date +%m_%d)"'
 alias mountftp='curlftpfs ftp://192.168.0.100:2211 $HOME/ftp/'
 alias sharehdd1='uftpd -l debug -n -o tftp=0,ftp=2121,writable /mnt/hdd1/'
