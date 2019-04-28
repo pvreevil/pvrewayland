@@ -1,7 +1,7 @@
 
 
 #fg
-set $fg #000000
+set $fg #d5c4a1
 
 #bar/tmux status/indicator
 set $bg #50404D

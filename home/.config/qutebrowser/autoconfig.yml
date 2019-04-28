@@ -35,4 +35,4 @@ settings:
     global: https://apps.disroot.org/
   url.searchengines:
     global:
-      DEFAULT: https://google.com/search?q={}
+      DEFAULT: https://www.startpage.com/do/dsearch?query={}
