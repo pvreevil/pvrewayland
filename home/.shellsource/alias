@@ -18,7 +18,7 @@ alias umount='doas umount'
 
 alias news='newsboat ; $BARPATH/newsboat/nb.sh '
 
-alias hblock='doas hblock -S $HOME/.config/hblock/sources'
+alias hblock='doas hblock -S $HOME/.config/hblock/sources -W $HOME/.config/hblock/whitelist.txt -r'
 
 alias otcry='doas cryptsetup tcryptOpen'
 alias ctcry='doas cryptsetup tcryptClose'
