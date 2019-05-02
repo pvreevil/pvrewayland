@@ -3,6 +3,10 @@
 
 config_version: 2
 settings:
+  auto_save.session:
+    global: true
+  content.autoplay:
+    global: false
   content.canvas_reading:
     global: false
   content.cookies.accept:
@@ -26,6 +30,8 @@ settings:
     global:
     - /etc/hosts
   content.javascript.enabled:
+    '*://*.lichess.org/*': true
+    '*://*.www.chess.com/*': true
     global: false
   content.local_content_can_access_file_urls:
     global: false
