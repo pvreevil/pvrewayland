@@ -29,6 +29,7 @@ media-sound/alsa-utils
 media-sound/moc
 media-video/mpv
 net-analyzer/nethogs
+net-dns/dnsmasq
 net-fs/curlftpfs
 net-ftp/uftpd
 net-misc/dhcpcd

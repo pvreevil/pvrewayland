@@ -5,6 +5,10 @@ config_version: 2
 settings:
   content.canvas_reading:
     global: false
+  content.cookies.accept:
+    global: no-3rdparty
+  content.cookies.store:
+    global: true
   content.geolocation:
     global: false
   content.headers.accept_language:
@@ -13,15 +17,21 @@ settings:
     global:
       accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
   content.headers.do_not_track:
-    global: true
+    global: null
+  content.headers.referer:
+    global: same-domain
   content.headers.user_agent:
-    global: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
-      Gecko) Chrome/73.0.3683.103 Safari/537.36
+    global: Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0
+  content.host_blocking.lists:
+    global:
+    - /etc/hosts
   content.javascript.enabled:
     global: false
   content.local_content_can_access_file_urls:
     global: false
   content.media_capture:
+    global: false
+  content.private_browsing:
     global: false
   content.proxy:
     global: socks://localhost:9050/

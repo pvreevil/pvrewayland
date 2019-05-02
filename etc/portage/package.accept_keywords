@@ -82,3 +82,16 @@ media-video/ffmpeg ~amd64
 # required by net-misc/nyx-2.1.0::gentoo
 # required by nyx (argument)
 =net-libs/stem-1.7.1 ~amd64
+
+
+#PyQT5-5.11+++ to allow qtbrowser disable cookies
+# required by =PyQt5-5.12.1 (argument)
+=dev-python/PyQt5-5.12.1 ~amd64
+# required by dev-python/PyQt5-5.12.1::gentoo
+# required by =PyQt5-5.12.1 (argument)
+=dev-python/PyQt5-sip-4.19.15 ~amd64
+# required by dev-python/PyQt5-5.12.1::gentoo
+# required by =PyQt5-5.12.1 (argument)
+=dev-python/sip-4.19.16 ~amd64
+# required by =PyQtWebEngine-5.12.1 (argument)
+=dev-python/PyQtWebEngine-5.12.1 ~amd64
