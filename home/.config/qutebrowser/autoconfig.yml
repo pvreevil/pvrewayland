@@ -31,6 +31,7 @@ settings:
     - /etc/hosts
   content.javascript.enabled:
     '*://*.lichess.org/*': true
+    '*://*.web.telegram.org/*': true
     '*://*.www.chess.com/*': true
     global: false
   content.local_content_can_access_file_urls:

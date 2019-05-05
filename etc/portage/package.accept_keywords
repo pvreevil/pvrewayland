@@ -21,22 +21,6 @@ dev-python/pypeg2 ~amd64
 # required by qutebrowser (argument)
 www-client/qutebrowser ~amd64
 
-# required by sway (argument)
-gui-wm/sway ~amd64
-# required by dev-libs/sway-1.0_rc1::gentoo
-# required by sway (argument)
-gui-libs/wlroots ~amd64
-# required by dev-libs/sway-1.0_rc1::gentoo[swayidle]
-# required by sway (argument)
-gui-apps/swayidle ~amd64
-# required by dev-libs/sway-1.0_rc1::gentoo[swaylock]
-# required by sway (argument)
-gui-apps/swaylock ~amd64
-# required by dev-libs/sway-1.0_rc1::gentoo[doc]
-# required by @selected
-# required by @world (argument)
-app-text/scdoc ~amd64
-
 # required by alacritty (argument)
 x11-terms/alacritty ~amd64
 # required by virtual/rust-1.32.0::gentoo
@@ -63,25 +47,20 @@ dev-libs/unibilium ~amd64
 # required by @world (argument)
 media-video/ffmpeg ~amd64
 # required by oath-toolkit (argument)
-=sys-auth/oath-toolkit-2.6.2 ~amd64
-# required by kpcli (argument)
-=app-admin/kpcli-3.2 ~amd64
-# required by app-admin/kpcli-3.2::gentoo
-# required by kpcli (argument)
-=dev-perl/File-KeePass-2.30.0-r1 ~amd64
+sys-auth/oath-toolkit ~amd64
 # required by net-ftp/uftpd-2.7::gentoo
 # required by uftpd (argument)
-=dev-libs/libuev-2.2.0 ~amd64
+dev-libs/libuev ~amd64
 # required by net-ftp/uftpd-2.7::gentoo
 # required by uftpd (argument)
-=dev-libs/libite-2.0.0 ~amd64
+dev-libs/libite ~amd64
 # required by uftpd (argument)
-=net-ftp/uftpd-2.7 ~amd64
+net-ftp/uftpd ~amd64
 # required by nyx (argument)
-=net-misc/nyx-2.1.0 ~amd64
+net-misc/nyx ~amd64
 # required by net-misc/nyx-2.1.0::gentoo
 # required by nyx (argument)
-=net-libs/stem-1.7.1 ~amd64
+net-libs/stem ~amd64
 
 
 #PyQT5-5.11+++ to allow qtbrowser disable cookies

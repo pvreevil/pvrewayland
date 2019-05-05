@@ -9,6 +9,6 @@ def format_rect:
 find_focused_node | format_rect
 '
 take_shot() {
-	grim "$@" $HOME/Pictures/Screenshots/screenshot_$(date +%Y_%m_%d_%Hh%Mm%Ss).png
+	grim "$@" /mnt/hdd1/images/screenshots/screenshot_$(date +%Y_%m_%d_%Hh%Mm%Ss).png
 }
 take_shot -g "$(swaymsg --type get_tree --raw | jq --raw-output "${filter}")"
