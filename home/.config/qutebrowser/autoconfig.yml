@@ -26,6 +26,8 @@ settings:
     global: same-domain
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0
+  content.host_blocking.enabled:
+    global: true
   content.host_blocking.lists:
     global:
     - /etc/hosts
@@ -33,6 +35,7 @@ settings:
     '*://*.lichess.org/*': true
     '*://*.web.telegram.org/*': true
     '*://*.www.chess.com/*': true
+    '*://*.www.youtube.com/*': true
     global: false
   content.local_content_can_access_file_urls:
     global: false
