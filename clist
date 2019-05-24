@@ -1,0 +1,7 @@
+>FS
+>Tarball
+>Confs : portage,rc,inittab,fstab,savedconf
+>chroot + details, timezone etc
+>kernel, -lkm, firmware/microcode, efistub, udev: I/O scheduler, disk PS, gpu
+>user, eselect-sh, groups : input(sway), plugdev(udevil), tor, portage, wheel
+>openrc(disable bloat), dhcpcd hppk, -netifrc
