@@ -1,2 +1,2 @@
-=sys-fs/lvm2-2.02.183
-=sys-fs/lvm2-2.02.184
+=sys-fs/lvm2-2.02.183*
+=sys-fs/lvm2-2.02.184*
