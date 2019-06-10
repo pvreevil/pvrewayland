@@ -5,7 +5,7 @@ sys-kernel/gentoo-sources experimental symlink
 sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
-sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl
+sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl -luks1_default
 
 sys-apps/portage -rsync-verify
 sys-apps/smartmontools -daemon
