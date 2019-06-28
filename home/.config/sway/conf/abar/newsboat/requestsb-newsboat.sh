@@ -20,7 +20,7 @@ COUNT2=$(cat $BARPATH/newsboat/unread)
         fi
 
         if [ $COUNT2 -gt $COUNT1 ]; then
-                notify-send.sh -i $BARPATH/newsboat/rss.png -t 7000 "$COUNT2 unread $not"
+                notify-send.sh -i $BARPATH/newsboat/rss.png -t 14000 "$COUNT2 unread $not"
         fi
 
 do sleep 900

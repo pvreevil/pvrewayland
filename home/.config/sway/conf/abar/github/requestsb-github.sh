@@ -27,7 +27,7 @@ COUNT2=$(cat $BARPATH/github/unread)
 	fi
 
 	if [ $COUNT2 -gt $COUNT1 ]; then
-        	notify-send.sh -i $BARPATH/github/gh.png -t 7000 "GitHub" "$notifications unread $not"
+        	notify-send.sh -i $BARPATH/github/gh.png -t 14000 "GitHub" "$notifications unread $not"
 	fi
 
 do sleep 60

@@ -1,0 +1,16 @@
+
+#fg
+set $fg #000000
+
+#bar/tmux status/indicator
+set $bg #7f838b
+
+#active ws, window border, mako border/ bar icon
+set $bg1 #a7abb4
+
+#inactive border, ws / mako bg / bar info
+set $bg2 #9397a0
+
+#wall
+set $wa #008080
+

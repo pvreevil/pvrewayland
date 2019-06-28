@@ -25,16 +25,23 @@ settings:
   content.headers.referer:
     global: same-domain
   content.headers.user_agent:
-    global: Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0
+    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/71.0.3578.98 Safari/537.36
   content.host_blocking.enabled:
     global: true
   content.host_blocking.lists:
     global:
     - /etc/hosts
   content.javascript.enabled:
+    '*://*.cloud.disroot.org/*': true
+    '*://*.drive.google.com/*': true
     '*://*.lichess.org/*': true
+    '*://*.mangadex.org/*': true
+    '*://*.mega.nz/*': true
     '*://*.web.telegram.org/*': true
     '*://*.www.chess.com/*': true
+    '*://*.www.mangaupdates.com/*': true
+    '*://*.www.reddit.com/*': true
     '*://*.www.youtube.com/*': true
     global: false
   content.local_content_can_access_file_urls:

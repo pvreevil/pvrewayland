@@ -27,7 +27,7 @@ COUNT2=$(cat $BARPATH/reddit/unread)
 	fi
 
 	if [ $COUNT2 -gt $COUNT1 ]; then
-		notify-send.sh -i $BARPATH/reddit/reddit.png -t 7000 "$notifications unread $not"
+		notify-send.sh -i $BARPATH/reddit/reddit.png -t 14000 "$notifications unread $not"
 	fi
 do sleep 60
 done

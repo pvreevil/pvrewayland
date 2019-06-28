@@ -1,5 +1,5 @@
 input "4119:8208:Gaming_Keyboard" {
-	xkb_layout us 
+	xkb_layout us
 	xkb_options caps:swapescape,compose:ralt
 }
 
