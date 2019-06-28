@@ -15,16 +15,13 @@
                 local |      default nonetwork                 
            localmount | boot                                   
              loopback | boot                                   
-              modules | boot                                   
              mount-ro |                        shutdown        
                  mtab | boot                                   
-             netmount |      default                           
                procfs | boot                                   
                  root | boot                                   
          save-keymaps | boot                                   
     save-termencoding | boot                                   
             savecache |                        shutdown        
-                 swap | boot                                   
                sysctl | boot                                   
                 sysfs |                                 sysinit
          termencoding | boot                                   
