@@ -6,6 +6,7 @@ sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
 sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl -luks1_default
+sys-boot/woeusb minimal
 
 sys-apps/portage -rsync-verify
 sys-apps/smartmontools -daemon
