@@ -15,7 +15,6 @@ app-misc/tmux
 app-portage/gentoolkit
 app-shells/fzy
 app-shells/mksh
-app-text/ghostscript-gpl
 app-text/pastebinit
 dev-python/pip
 dev-qt/qtwayland
@@ -45,9 +44,11 @@ sys-apps/smartmontools
 sys-apps/udevil
 sys-auth/oath-toolkit
 sys-boot/efibootmgr
+sys-boot/woeusb
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-fs/dosfstools
+sys-fs/ntfs3g
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-process/nmon
