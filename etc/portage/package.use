@@ -115,7 +115,7 @@ dev-libs/libpcre2 pcre16
 # required by qtwayland (argument)
 dev-qt/qtgui egl
 # required by sys-devel/llvmgold-7::gentoo
->=sys-devel/llvm-7.1.0 gold
+sys-devel/llvm gold
 # required by dev-cpp/cairomm-1.12.0-r1::gentoo
 # required by dev-cpp/pangomm-2.42.0::gentoo
 # required by dev-cpp/gtkmm-3.24.1::gentoo
@@ -123,3 +123,4 @@ dev-qt/qtgui egl
 # required by waybar (argument)
 x11-libs/cairo X
 dev-cpp/cairomm X
+dev-cpp/gtkmm X
