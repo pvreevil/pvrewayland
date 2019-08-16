@@ -1,5 +1,4 @@
 export PATH="${PATH}:${HOME}/.local/bin/"
-#export XKB_DEFAULT_LAYOUT=us
 export QT_QPA_PLATFORM=wayland-egl
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export BARPATH=~/.config/sway/conf/abar
@@ -7,7 +6,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 export NNN_USE_EDITOR=1
 export NNN_OPENER=linopen
-export BROWSER='env TZ=UTC qutebrowser'
+export BROWSER='env TZ=UTC firefox'
 export BORG_REPO=/mnt/hdd2/backupHDD1
 export GDK_BACKEND=wayland
-export BEMENU_BACKEND=wayland
