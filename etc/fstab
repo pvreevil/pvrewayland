@@ -3,7 +3,7 @@
 #<boot>
 PARTUUID=052eaece-5332-4d82-8f4c-40669acd1bc5	/boot		vfat	rw,nosuid,nodev,noexec,auto,nouser,async,discard								0	0
 #<root>
-PARTUUID=e1ae1d21-22ab-4933-b851-d8675aa140a5	/		btrfs	defaults,noatime,discard,space_cache,ssd,autodefrag,compress=zstd,subvol=@gentoo	0	0
+PARTUUID=e1ae1d21-22ab-4933-b851-d8675aa140a5	/		btrfs	defaults,noatime,discard,space_cache,ssd,autodefrag,compress=zstd,subvol=@gentoo0819	0	0
 PARTUUID=e1ae1d21-22ab-4933-b851-d8675aa140a5	/home		btrfs	defaults,noatime,discard,space_cache,ssd,autodefrag,compress=zstd,subvol=@home	0	0
 PARTUUID=e1ae1d21-22ab-4933-b851-d8675aa140a5	/.snap		btrfs	defaults,noatime,discard,space_cache,ssd,autodefrag,compress=zstd,subvol=@snapshots	0	0
 PARTUUID=e1ae1d21-22ab-4933-b851-d8675aa140a5	/btrfstoplvl	btrfs	defaults,noatime,discard,space_cache,ssd,autodefrag,compress=zstd,subvol=/		0	0
