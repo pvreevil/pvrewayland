@@ -42,3 +42,8 @@ dev-util/cbindgen ~amd64
 media-libs/harfbuzz ~amd64
 # required by grim (argument)
 gui-apps/grim ~amd64
+# required by waybar (argument)
+=gui-apps/waybar-0.7.2 ~amd64
+# required by gui-apps/waybar-0.7.2::gentoo
+# required by waybar (argument)
+=dev-libs/spdlog-1.3.1 ~amd64
