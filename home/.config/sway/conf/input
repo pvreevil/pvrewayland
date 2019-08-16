@@ -5,7 +5,7 @@ input "4119:8208:Gaming_Keyboard" {
 }
 
 input "1149:8264:Primax_Kensington_Eagle_Trackball" {
-	natural_scroll disable
-	scroll_method on_button_down
-	scroll_button button 11
+	accel_profile adaptive
+	pointer_accel -1
+
 }

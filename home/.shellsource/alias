@@ -8,6 +8,7 @@ alias backuproot='doas btrfs subvolume snapshot /btrfstoplvl/@gentoo /.snap/root
 alias backuphome='doas btrfs subvolume snapshot /btrfstoplvl/@home /.snap/home/@$(date +"%Y-%m-%d_%H:%M:%S")'
 alias nethogs='doas nethogs'
 alias firefox='env TZ=UTC firefox'
+alias nnn='nnn -dHS'
 
 #needs plugdev group
 alias dmount='udevil mount '
