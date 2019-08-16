@@ -9,3 +9,5 @@ export NNN_USE_EDITOR=1
 export NNN_OPENER=linopen
 export BROWSER='env TZ=UTC qutebrowser'
 export BORG_REPO=/mnt/hdd2/backupHDD1
+export GDK_BACKEND=wayland
+export BEMENU_BACKEND=wayland

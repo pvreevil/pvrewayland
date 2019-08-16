@@ -4,6 +4,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
+set $menu bemenu-run
 set $gla #00000000
 
 

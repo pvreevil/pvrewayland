@@ -15,13 +15,7 @@ https://planet.gentoo.org/rss20.xml "linux" "~Planet Gentoo"
 
 https://github.com/mayfrost/guides/commits/master.atom "linux ""~Mayfrost guides commits"
 
-https://github.com/jwilm/alacritty/commits/master.atom "linux ""~Alacritty commits"
-
 https://github.com/alphapapa/solarized-everything-css/commits/master.atom "linux"
-
-https://github.com/emersion/grim/commits/master.atom "sway ""linux"
-
-https://github.com/emersion/mako/commits/master.atom "sway ""linux"
 
 https://github.com/vlevit/notify-send.sh/commits/master.atom "sway ""linux"
 

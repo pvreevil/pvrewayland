@@ -8,7 +8,7 @@ $BARPATH/newsboat/requestsb-newsboat.sh      &
 $BARPATH/reddit/requestsb-reddit.sh  &
 
 #JSON
-source $BARPATH/colorvar/colorvar4.sh 
+source $BARPATH/colorvar/colorvar5.sh 
 source $BARPATH/alsa/requestsb-alsa.sh
 source $BARPATH/moc/requestsb-mocp.sh
 bor="\"border\": \"$bg1\""
@@ -31,7 +31,8 @@ getvar()	{
 			CPU=$(tail -n 1 /tmp/ghud/cpu | awk -F. '{print $1}')
 			GH=$(cat $BARPATH/github/unread)
 			RDD=$(cat $BARPATH/reddit/unread)
-			RSS=$(cat $BARPATH/newsboat/unread)
+			RSS=$(cat $BARPATH/newsboat/unread)a
+			FREE=$(df -H /dev/sda2 | grep dev | awk '{print $4}')
 }
 while
 	getvar
@@ -40,6 +41,8 @@ while
 	printf %s	",[
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 16,$ft \"\"},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$MOC\",$bor},
+			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"free\"},
+			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$FREE\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"ram\"},
 			{$b \"$bg2\",$s,$sw 3,$ac,$mw 30,$ft \"$MEM%\",$bor},
 			{$b \"$bg1\",$s,$sw 0,$ac,$mw 22,$ft \"cpu\"},

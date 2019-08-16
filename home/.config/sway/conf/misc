@@ -10,7 +10,4 @@ floating_maximum_size 848 x 480
 
 gaps inner 3
 
-exec swayidle -w \
-	timeout 600 sglitchlock \
-	timeout 720 'loginctl suspend' \
-	before-sleep 'sglitchlock' \
+exec swayidle -w timeout 600 'sglitchlock' timeout 720 'loginctl suspend' before-sleep 'sglitchlock'

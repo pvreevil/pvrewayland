@@ -1,5 +1,11 @@
+
 input "4119:8208:Gaming_Keyboard" {
 	xkb_layout us
 	xkb_options caps:swapescape,compose:ralt
 }
 
+input "1149:8264:Primax_Kensington_Eagle_Trackball" {
+	natural_scroll disable
+	scroll_method on_button_down
+	scroll_button button 11
+}

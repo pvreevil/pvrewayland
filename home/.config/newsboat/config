@@ -8,7 +8,7 @@ cache-file "~/.cache/newsboat/cache.db"
 cookie-cache "~/.cache/newsboat/cookies.txt"
 download-retries 10
 error-log "~/.cache/newsboat/error.log"
-feed-sort-order lastupdate
+feed-sort-order lastupdate asc
 history-limit 0
 #keep-articles-days 21
 refresh-on-startup yes
