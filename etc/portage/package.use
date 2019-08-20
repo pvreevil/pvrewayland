@@ -18,6 +18,7 @@ sys-apps/dbus user-session
 sys-apps/openrc -netifrc
 
 gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
+gui-apps/waybar network
 
 app-editors/neovim -clipboard -luajit tui
 
@@ -30,7 +31,10 @@ media-sound/moc ffmpeg aac vorbis flac libsamplerate
 net-vpn/tor lzma tor-hardening zstd
 net-p2p/transmission gtk
 
+
 www-client/firefox -system-libvpx lto hwaccel clang cpu_flags_x86_avx2 custom-cflags custom-optimization
+#manual ff
+dev-lang/python sqlite
 
 # required by media-libs/mesa-18.2.8::gentoo[-video_cards_r100,video_cards_radeonsi,-video_cards_radeon,-video_cards_r300,-video_cards_r600,-video_cards_r200]
 # required by virtual/opengl-7.0-r2::gentoo
@@ -43,7 +47,6 @@ x11-libs/libdrm video_cards_radeon
 # required by dev-libs/sway-1.0_beta2::gentoo
 # required by sway (argument)
 media-libs/mesa gles2
-
 
 # required by dev-libs/swayidle-1.2::gentoo[elogind]
 # required by dev-libs/sway-1.0_rc2::gentoo[swayidle]
@@ -84,36 +87,6 @@ media-video/mpv libmpv
 # required by app-text/zathura-pdf-poppler-0.2.9::gentoo
 # required by zathura-pdf-poppler (argument)
 app-text/poppler cairo
-# required by net-im/telegram-desktop-9999::reagentoo
-# required by telegram-desktop (argument)
-sys-libs/zlib minizip
-# required by net-im/telegram-desktop-9999::reagentoo
-# required by telegram-desktop (argument)
-x11-libs/libva X
-# required by dev-libs/libappindicator-12.10.0-r301::gentoo
-# required by net-im/telegram-desktop-9999::reagentoo[gtk3]
-# required by telegram-desktop (argument)
-dev-libs/libdbusmenu gtk3
-# required by dev-qt/qtgui-5.12.3-r1::gentoo[xcb]
-# required by dev-qt/qtimageformats-5.12.3::gentoo
-# required by net-im/telegram-desktop-9999::reagentoo
-# required by telegram-desktop (argument)
-x11-libs/libxcb xkb
-# required by dev-qt/qtgui-5.12.3-r1::gentoo[xcb]
-# required by dev-qt/qtimageformats-5.12.3::gentoo
-# required by net-im/telegram-desktop-9999::reagentoo
-# required by telegram-desktop (argument)
-x11-libs/libxkbcommon X
-# required by dev-qt/qtcore-5.12.3::gentoo
-# required by dev-qt/qtdbus-5.12.3::gentoo
-# required by dev-qt/qtgui-5.12.3-r1::gentoo[dbus]
-# required by dev-qt/qtimageformats-5.12.3::gentoo
-# required by net-im/telegram-desktop-9999::reagentoo
-# required by telegram-desktop (argument)
-dev-libs/libpcre2 pcre16
-# required by dev-qt/qtwayland-5.12.3::gentoo
-# required by qtwayland (argument)
-dev-qt/qtgui egl
 # required by sys-devel/llvmgold-7::gentoo
 sys-devel/llvm gold
 # required by dev-cpp/cairomm-1.12.0-r1::gentoo

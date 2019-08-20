@@ -1,13 +1,12 @@
 
 default_border pixel 3
 default_floating_border pixel 3
-floating_maximum_size 848 x 480
+floating_maximum_size 970 x 600
 
 #default_border normal 0
 #default_floating_border normal 0
-#font monospaced 10
-#titlebar_paddin 6
-
+#font monospaced 0
+#titlebar_padding 9 9
 gaps inner 3
 
 exec swayidle -w timeout 600 'sglitchlock' timeout 720 'loginctl suspend' before-sleep 'sglitchlock'

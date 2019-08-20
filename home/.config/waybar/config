@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["custom/alsa","custom/mocp","sway/mode"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["custom/netspeed","network","cpu", "memory","custom/free","clock"],
+    "sway/workspaces": {
+    	"format": "{index}"
+    },
+    "clock": {
+        "format": "{:%A, %d - %H:%M}"
+    },
+    "cpu": {
+        "format": "cpu {usage}%"
+    },
+    "memory": {
+        "format": "ram {percentage}%"
+    },
+    "network": {
+        "format-wifi": "{essid} {signalStrength}%",
+        "format-disconnected": "x x",
+	"interval": 2
+    },
+    "custom/netspeed": {
+    	"exec": "$HOME/.config/waybar/custom/netspeed.sh",
+	"format": "{}"
+    },
+    "custom/alsa": {
+    	"exec": "$HOME/.config/waybar/custom/alsa.sh",
+	"format": "{}"
+    },
+    "custom/mocp": {
+    	"exec": "$HOME/.config/waybar/custom/mocp.sh",
+	"format" : "moc {}",
+	"interval" : 1
+    },
+    "custom/free": {
+    	"format" : "{} free",
+    	"exec": "$HOME/.config/waybar/custom/ssdfree.sh",
+	"interval": 30
+    }
+}

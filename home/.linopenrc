@@ -21,7 +21,7 @@ interm=mocp
 # .png:sxiv
 # .mp4:mplayer
 # .txt:vim
-.pdf:photoqt
+.pdf:zathura
 
 # 2. Mime type
 # image/png:sxiv
@@ -29,8 +29,8 @@ interm=mocp
 # text/plain:vim
 
 # 3. Mime category
-image:photoqt
-video:mpv
+image:gthumb
+video:gnome-mpv
 #audio:mpv->interm # you can also specify the interm rule explictly after '->'
 text:nvim
 audio:mocp -l

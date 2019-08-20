@@ -1,0 +1,42 @@
+* {
+    border: none;
+    padding-right: 1px;
+    padding-left: 1px;
+    font-family: Source Code Pro for Powerline;
+    font-size: 10px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces button.focused {
+	background-color: #e5c4cc;
+	color: #a8516e;
+}
+
+#workspaces button,
+#custom-free,
+#custom-mocp,
+#custom-alsa,
+#custom-netspeed,
+#clock,
+#cpu,
+#memory,
+#network,
+#mode,
+#idle_inhibitor {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    color: #f2e1e5;
+    background-color: #b86e84;
+    border-radius: 5px;
+    border: 1px solid rgba(242, 225, 229, 1);
+}

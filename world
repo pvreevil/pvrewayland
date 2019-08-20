@@ -17,12 +17,13 @@ app-shells/mksh
 app-text/pastebinit
 app-text/zathura
 app-text/zathura-pdf-poppler
-dev-qt/qtwayland
 dev-vcs/git
 gui-apps/grim
 gui-apps/mako
+gui-apps/waybar
 gui-apps/wl-clipboard
 gui-wm/sway
+media-fonts/symbola
 media-gfx/gthumb
 media-gfx/imagemagick
 media-plugins/alsa-plugins
@@ -32,7 +33,6 @@ media-video/gnome-mpv
 net-dns/dnsmasq
 net-fs/curlftpfs
 net-ftp/uftpd
-net-im/telegram-desktop
 net-misc/dhcpcd
 net-misc/nyx
 net-news/newsboat

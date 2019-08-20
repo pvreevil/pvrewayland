@@ -10,8 +10,6 @@ app-editors/neovim ~amd64
 
 media-video/mpv ~amd64
 
-net-im/telegram-desktop ~amd64
-
 # required by nnn (argument)
 app-misc/nnn ~amd64
 
