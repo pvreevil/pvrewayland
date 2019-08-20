@@ -2,7 +2,8 @@
 #Rules
 
 for_window [title="mpv"] floating enable
-for_window [title="imv"] floating enable
+assign [app_id="firefox"] 0
+for_window [app_id="firefox"] focus
 
 #Exec
 
