@@ -1,12 +1,14 @@
 
-default_border pixel 3
-default_floating_border pixel 3
+default_border pixel 1
+default_floating_border pixel 1
 floating_maximum_size 970 x 600
 
 #default_border normal 0
 #default_floating_border normal 0
 #font monospaced 0
 #titlebar_padding 9 9
-gaps inner 3
+gaps inner 1
+smart_borders on
+smart_gaps on
 
 exec swayidle -w timeout 600 'sglitchlock' timeout 720 'loginctl suspend' before-sleep 'sglitchlock'
