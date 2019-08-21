@@ -20,7 +20,7 @@ exec "sleep 0.2 ; sglitchlock"
 
 exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $wa"
 
-#exec_always swaymsg "output * bg $HOME/Downloads/nancy.jpg fill $wa"
+#exec_always swaymsg "output * bg $HOME/Downloads/aliz.jpg fill $wa"
 
 #exec_always swaymsg "output * bg /mnt/hdd1/downloads/fg5.jpg fill $wa"
 
