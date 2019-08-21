@@ -6,9 +6,9 @@ icons=1
 format=<span font_weight="bold" underline="none">%s</span>\n%b
 width=216
 height=600
-border-size=3
+border-size=1
 border-radius=9
-padding=3
-margin=3
+padding=1
+margin=1
 anchor=top-right
 layer=overlay
