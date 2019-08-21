@@ -2,7 +2,7 @@
 #Rules
 
 for_window [title="mpv"] floating enable
-assign [app_id="firefox"] 0
+assign [app_id="firefox"] 10
 for_window [app_id="firefox"] focus
 
 #Exec
@@ -18,13 +18,13 @@ exec "sleep 0.2 ; sglitchlock"
 
 #exec "gamma-control -g 0.95 -b 0.95"
 
-#exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $wa"
+exec_always swaymsg "output * bg $HOME/Pictures/patterns/$(ls -A $HOME/Pictures/patterns/ | shuf -n 1) tile $wa"
 
-exec_always swaymsg "output * bg $HOME/Downloads/nancy.jpg fill $wa"
+#exec_always swaymsg "output * bg $HOME/Downloads/nancy.jpg fill $wa"
 
 #exec_always swaymsg "output * bg /mnt/hdd1/downloads/fg5.jpg fill $wa"
 
-exec_always "pkill waybar ; waybar"
+exec_always "pkill waybar ; exec waybar"
 
 workspace 2
 
