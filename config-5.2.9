@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.2.8-SilverBullet3 Kernel Configuration
+# Linux/x86 5.2.9-HotPants Kernel Configuration
 #
 
 #
@@ -551,7 +551,6 @@ CONFIG_FIRMWARE_MEMMAP=y
 CONFIG_DMIID=y
 # CONFIG_DMI_SYSFS is not set
 CONFIG_DMI_SCAN_MACHINE_NON_EFI_FALLBACK=y
-# CONFIG_ISCSI_IBFT_FIND is not set
 # CONFIG_FW_CFG_SYSFS is not set
 # CONFIG_GOOGLE_FIRMWARE is not set
 
@@ -1240,7 +1239,7 @@ CONFIG_PREVENT_FIRMWARE_BUILD=y
 # Firmware loader
 #
 CONFIG_FW_LOADER=y
-CONFIG_EXTRA_FIRMWARE="amdgpu/polaris12_ce.bin amdgpu/polaris12_ce_2.bin amdgpu/polaris12_k_smc.bin amdgpu/polaris12_k_mc.bin amdgpu/polaris12_mc.bin amdgpu/polaris12_me.bin amdgpu/polaris12_me_2.bin amdgpu/polaris12_mec.bin amdgpu/polaris12_mec2.bin amdgpu/polaris12_mec2_2.bin amdgpu/polaris12_mec_2.bin amdgpu/polaris12_pfp.bin amdgpu/polaris12_pfp_2.bin amdgpu/polaris12_rlc.bin amdgpu/polaris12_sdma.bin amdgpu/polaris12_sdma1.bin amdgpu/polaris12_smc.bin amdgpu/polaris12_uvd.bin amdgpu/polaris12_vce.bin rtlwifi/rtl8192cufw.bin rtlwifi/rtl8192cufw_TMSC.bin regulatory.db regulatory.db.p7s amd-ucode/microcode_amd_fam15h.bin"
+CONFIG_EXTRA_FIRMWARE="amdgpu/polaris12_ce.bin amdgpu/polaris12_ce_2.bin amdgpu/polaris12_k_smc.bin amdgpu/polaris12_k_mc.bin amdgpu/polaris12_mc.bin amdgpu/polaris12_me.bin amdgpu/polaris12_me_2.bin amdgpu/polaris12_mec.bin amdgpu/polaris12_mec2.bin amdgpu/polaris12_mec2_2.bin amdgpu/polaris12_mec_2.bin amdgpu/polaris12_pfp.bin amdgpu/polaris12_pfp_2.bin amdgpu/polaris12_rlc.bin amdgpu/polaris12_sdma.bin amdgpu/polaris12_sdma1.bin amdgpu/polaris12_smc.bin amdgpu/polaris12_uvd.bin amdgpu/polaris12_vce.bin rtlwifi/rtl8192cufw.bin rtlwifi/rtl8192cufw_TMSC.bin amd-ucode/microcode_amd_fam15h.bin"
 CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 # CONFIG_FW_LOADER_USER_HELPER is not set
 # end of Firmware loader
@@ -3289,7 +3288,7 @@ CONFIG_KEYS=y
 # CONFIG_PERSISTENT_KEYRINGS is not set
 # CONFIG_BIG_KEYS is not set
 # CONFIG_ENCRYPTED_KEYS is not set
-# CONFIG_KEY_DH_OPERATIONS is not set
+CONFIG_KEY_DH_OPERATIONS=y
 # CONFIG_SECURITY_DMESG_RESTRICT is not set
 CONFIG_SECURITY=y
 # CONFIG_SECURITYFS is not set
@@ -3360,6 +3359,7 @@ CONFIG_CRYPTO_RNG_DEFAULT=y
 CONFIG_CRYPTO_AKCIPHER2=y
 CONFIG_CRYPTO_AKCIPHER=y
 CONFIG_CRYPTO_KPP2=y
+CONFIG_CRYPTO_KPP=y
 CONFIG_CRYPTO_ACOMP2=y
 CONFIG_CRYPTO_MANAGER=y
 CONFIG_CRYPTO_MANAGER2=y
@@ -3379,7 +3379,7 @@ CONFIG_CRYPTO_GLUE_HELPER_X86=y
 # Public-key cryptography
 #
 CONFIG_CRYPTO_RSA=y
-# CONFIG_CRYPTO_DH is not set
+CONFIG_CRYPTO_DH=y
 # CONFIG_CRYPTO_ECDH is not set
 # CONFIG_CRYPTO_ECRDSA is not set
 
@@ -3439,7 +3439,7 @@ CONFIG_CRYPTO_CRC32=y
 CONFIG_CRYPTO_GHASH=y
 # CONFIG_CRYPTO_POLY1305 is not set
 # CONFIG_CRYPTO_POLY1305_X86_64 is not set
-# CONFIG_CRYPTO_MD4 is not set
+CONFIG_CRYPTO_MD4=y
 CONFIG_CRYPTO_MD5=y
 # CONFIG_CRYPTO_MICHAEL_MIC is not set
 CONFIG_CRYPTO_RMD128=y
@@ -3537,7 +3537,7 @@ CONFIG_CRYPTO_HW=y
 CONFIG_ASYMMETRIC_KEY_TYPE=y
 CONFIG_ASYMMETRIC_PUBLIC_KEY_SUBTYPE=y
 CONFIG_X509_CERTIFICATE_PARSER=y
-# CONFIG_PKCS8_PRIVATE_KEY_PARSER is not set
+CONFIG_PKCS8_PRIVATE_KEY_PARSER=y
 CONFIG_PKCS7_MESSAGE_PARSER=y
 # CONFIG_PKCS7_TEST_KEY is not set
 # CONFIG_SIGNED_PE_FILE_VERIFICATION is not set

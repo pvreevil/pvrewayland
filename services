@@ -9,6 +9,7 @@
                  fsck | boot                                   
              hostname | boot                                   
               hwclock | boot                                   
+                  iwd |      default                           
               keymaps | boot                                   
             killprocs |                        shutdown        
                 local |      default nonetwork                 

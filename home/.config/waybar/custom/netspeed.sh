@@ -52,8 +52,7 @@ update_rate() {
 
 band()  {
 
-	ssid=$(wpa_cli status | awk -F= '/^ssid/{print $2}')
-        up=$(ip -br link | grep wlp | awk '{print $2}')
+        up=$(ip -br link | grep wl | awk '{print $2}')
         update_rate
 
 if [ "$up" = "DOWN" ]; then

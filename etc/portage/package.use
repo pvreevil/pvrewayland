@@ -2,7 +2,6 @@
 #manual
 
 sys-kernel/gentoo-sources experimental symlink
-sys-kernel/linux-firmware savedconfig
 
 sys-fs/btrfs-progs -convert
 sys-fs/cryptsetup -gcrypt -kernel pwquality reencrypt openssl -luks1_default
@@ -17,7 +16,7 @@ sys-apps/dbus user-session
 
 sys-apps/openrc -netifrc
 
-gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man
+gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man -swaybar -swaymsg
 gui-apps/waybar network
 
 app-editors/neovim -clipboard -luajit tui
@@ -30,7 +29,7 @@ media-sound/moc ffmpeg aac vorbis flac libsamplerate
 
 net-vpn/tor lzma tor-hardening zstd
 net-p2p/transmission gtk
-
+net-wireless/iwd -crda wired
 
 www-client/firefox -system-libvpx lto hwaccel clang cpu_flags_x86_avx2 custom-cflags custom-optimization
 #manual ff
