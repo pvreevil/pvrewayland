@@ -1,14 +1,12 @@
 * {
     border: none;
-    padding-right: 1px;
-    padding-left: 1px;
     font-family: Source Code Pro for Powerline;
     font-size: 10px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: rgba(168, 81, 110, 0.7);
 }
 
 #workspaces button.focused {
