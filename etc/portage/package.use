@@ -16,7 +16,7 @@ sys-apps/dbus user-session
 
 sys-apps/openrc -netifrc
 
-gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man -swaybar -swaymsg
+gui-wm/sway -tray -wallpapers swayidle -swaynag swaylock man -swaybar
 gui-apps/waybar network
 
 app-editors/neovim -clipboard -luajit tui
