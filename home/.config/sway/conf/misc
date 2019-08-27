@@ -10,6 +10,6 @@ smart_gaps on
 exec swayidle -w timeout 600 'sglitchlock' timeout 720 'loginctl suspend' before-sleep 'sglitchlock'
 
 bar {
-        status_command waybar
+        swaybar_command waybar
 }
 	
