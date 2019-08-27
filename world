@@ -7,16 +7,14 @@ app-editors/neovim
 app-eselect/eselect-sh
 app-misc/detox
 app-misc/gtypist
-app-misc/jq
 app-misc/neofetch
 app-misc/nnn
 app-misc/tmux
 app-portage/gentoolkit
 app-shells/fzy
 app-shells/mksh
+app-text/evince
 app-text/pastebinit
-app-text/zathura
-app-text/zathura-pdf-poppler
 dev-vcs/git
 gui-apps/grim
 gui-apps/mako
@@ -35,7 +33,6 @@ net-fs/curlftpfs
 net-ftp/uftpd
 net-misc/dhcpcd
 net-misc/nyx
-net-news/newsboat
 net-p2p/transmission
 net-vpn/tor
 net-wireless/iwd

@@ -1,6 +1,6 @@
 >FS
 >Tarball
->Confs : portage,rc,inittab,fstab,savedconf
+>Confs : portage,rc,inittab,fstab
 >chroot + details, timezone etc
 >kernel, -lkm, firmware/microcode, efistub, udev: I/O scheduler, disk PS, gpu
 >user, eselect-sh, groups : input(sway), plugdev(udevil), tor, portage, wheel

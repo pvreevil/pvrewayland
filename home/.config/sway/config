@@ -1,9 +1,8 @@
 
-include ~/.config/sway/conf/colorvar/colorvar5
+include ~/.config/sway/conf/colorvar/colorvar6
 include ~/.config/sway/conf/variables
 include ~/.config/sway/conf/colors
 include ~/.config/sway/conf/misc
-#include ~/.config/sway/conf/bar
 include ~/.config/sway/conf/bind
 include ~/.config/sway/conf/input
 include ~/.config/sway/conf/rulesnexec
